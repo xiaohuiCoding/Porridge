@@ -1,0 +1,8 @@
+platform :ios, '8.0'
+
+pod 'MJRefresh'
+pod 'AFNetworking'
+pod 'FMDB'
+pod 'SDWebImage'
+pod 'SDCycleScrollView'
+pod 'Mantle'

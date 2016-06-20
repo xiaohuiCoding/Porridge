@@ -1,0 +1,23 @@
+//
+//  PrefixHeader_demo1.pch
+//  demo1
+//
+//  Created by 冯小辉 on 16/6/16.
+//  Copyright © 2016年 xinguang. All rights reserved.
+//
+
+#ifndef PrefixHeader_demo1_pch
+#define PrefixHeader_demo1_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//三方类库头文件
+#import "SDCycleScrollView.h"
+#import "AFNetworking.h"
+#import "FMDatabase.h"
+
+//宏定义头文件
+#import "macro.h"
+
+#endif /* PrefixHeader_demo1_pch */
