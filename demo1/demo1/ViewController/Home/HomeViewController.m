@@ -133,11 +133,13 @@
     [self autoText];
 }
 
+//扫描
 - (void)scan
 {
     
 }
 
+//搜索
 - (void)search
 {
     
