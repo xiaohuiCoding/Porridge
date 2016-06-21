@@ -10,10 +10,10 @@
 #import "HomeViewController.h"
 #import "SecondViewController.h"
 #import "ThirdViewController.h"
+#import "FourthViewController.h"
 #import "MineViewController.h"
 #import "TabBar.h"
 #import "TabBarItem.h"
-//#import "BHBPopView.h"
 
 @interface TabBarController ()<TabBarDelegate, UIActionSheetDelegate>
 
@@ -40,12 +40,17 @@
     nav3.navigationBar.barTintColor = [UIColor purpleColor];
     [nav3.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor], NSFontAttributeName:[UIFont systemFontOfSize:20.0]}];
     
-    MineViewController *mineVC = [[MineViewController alloc] init];
-    UINavigationController *nav4 = [[UINavigationController alloc] initWithRootViewController:mineVC];
+    FourthViewController *fourthVC = [[FourthViewController alloc] init];
+    UINavigationController *nav4 = [[UINavigationController alloc] initWithRootViewController:fourthVC];
     nav4.navigationBar.barTintColor = [UIColor purpleColor];
     [nav4.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor], NSFontAttributeName:[UIFont systemFontOfSize:20.0]}];
     
-    self.viewControllers = @[nav1, nav2, nav3, nav4];
+    MineViewController *mineVC = [[MineViewController alloc] init];
+    UINavigationController *nav5 = [[UINavigationController alloc] initWithRootViewController:mineVC];
+    nav5.navigationBar.barTintColor = [UIColor purpleColor];
+    [nav5.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor], NSFontAttributeName:[UIFont systemFontOfSize:20.0]}];
+    
+    self.viewControllers = @[nav1, nav2, nav3, nav4, nav5];
     
     [[UITabBar appearance] setBackgroundImage:[[UIImage alloc] init]];
     [[UITabBar appearance] setShadowImage:[[UIImage alloc] init]];
@@ -60,16 +65,24 @@
                                                  title:@"首页"
                                        normalImageName:@"home_normal.png"
                                      selectedImageName:@"home_highlight.png" tabBarItemType:TabBarItemTypeNormal];
+    
     TabBarItem *sameCityItem = [self tabBarItemWithFrame:CGRectMake(normalButtonWidth, 0, normalButtonWidth, tabBarHeight)
                                                      title:@"second"
                                            normalImageName:@"mycity_normal.png"
                                          selectedImageName:@"mycity_highlight.png" tabBarItemType:TabBarItemTypeNormal];
+    
+//    TabBarItem *publishItem = [self tabBarItemWithFrame:CGRectMake(normalButtonWidth * 2, 0, publishItemWidth, tabBarHeight)
+//                                                    title:@"发布"
+//                                          normalImageName:@"post_normal.png"
+//                                        selectedImageName:@"post_normal.png" tabBarItemType:TabBarItemTypeRise];
+    
     TabBarItem *publishItem = [self tabBarItemWithFrame:CGRectMake(normalButtonWidth * 2, 0, publishItemWidth, tabBarHeight)
-                                                    title:@"发布"
-                                          normalImageName:@"post_normal.png"
-                                        selectedImageName:@"post_normal.png" tabBarItemType:TabBarItemTypeRise];
+                                                  title:@"third"
+                                        normalImageName:@"post_normal.png"
+                                      selectedImageName:@"post_normal.png" tabBarItemType:TabBarItemTypeNormal];
+    
     TabBarItem *messageItem = [self tabBarItemWithFrame:CGRectMake(normalButtonWidth * 2 + publishItemWidth, 0, normalButtonWidth, tabBarHeight)
-                                                    title:@"third"
+                                                    title:@"fourth"
                                           normalImageName:@"message_normal.png"
                                         selectedImageName:@"message_highlight.png" tabBarItemType:TabBarItemTypeNormal];
     TabBarItem *mineItem = [self tabBarItemWithFrame:CGRectMake(normalButtonWidth * 3 + publishItemWidth, 0, normalButtonWidth, tabBarHeight)
