@@ -13,6 +13,7 @@
 #import "MineViewController.h"
 #import "TabBar.h"
 #import "TabBarItem.h"
+//#import "BHBPopView.h"
 
 @interface TabBarController ()<TabBarDelegate, UIActionSheetDelegate>
 
@@ -104,20 +105,20 @@
 
 - (void)tabBarDidSelectedRiseButton
 {
-    UIViewController *viewController = self.selectedViewController;
-    
-    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil
-                                                             delegate:self
-                                                    cancelButtonTitle:@"取消"
-                                               destructiveButtonTitle:nil
-                                                    otherButtonTitles:@"拍照", @"从相册选取", nil];
-    [actionSheet showInView:viewController.view];
+//    UIViewController *viewController = self.selectedViewController;
+//    
+//    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil
+//                                                             delegate:self
+//                                                    cancelButtonTitle:@"取消"
+//                                               destructiveButtonTitle:nil
+//                                                    otherButtonTitles:@"拍照", @"从相册选取", nil];
+//    [actionSheet showInView:viewController.view];
 }
 
 #pragma mark - UIActionSheetDelegate
 
 - (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
-    NSLog(@"buttonIndex = %ld", buttonIndex);
+    //NSLog(@"buttonIndex = %ld", buttonIndex);
 }
 
 - (void)didReceiveMemoryWarning {

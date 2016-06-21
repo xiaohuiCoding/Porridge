@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "UserGuideViewController.h"
-//#import "XHTabBarController.h"
 #import "TabBarController.h"
 //#import "AFNetworkActivityIndicatorManager.h"
 

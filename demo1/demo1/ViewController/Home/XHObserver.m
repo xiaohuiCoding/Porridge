@@ -13,6 +13,7 @@
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
 {
     if ([keyPath isEqualToString:@"temperature"]) {
+        
         NSLog(@"old value is %.1f,new value is %.1f",[change[@"old"] floatValue],[change[@"new"] floatValue]);
     }
 }
