@@ -19,7 +19,6 @@
 		0678EFDC1D1269CF000A3B7B /* h3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0678EFD11D1269CF000A3B7B /* h3.jpg */; };
 		0678EFDD1D1269CF000A3B7B /* h4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0678EFD21D1269CF000A3B7B /* h4.jpg */; };
 		0678EFDE1D1269CF000A3B7B /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 0678EFD31D1269CF000A3B7B /* LaunchImage.png */; };
-		0695BA1E1CC0D2C0005F7D1E /* XHNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 0695BA121CC0D2C0005F7D1E /* XHNetwork.m */; };
 		0695BA241CC0D2D5005F7D1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0695BA221CC0D2D5005F7D1E /* LaunchScreen.storyboard */; };
 		06D359CF1C9FDC1D003359B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D359CE1C9FDC1D003359B8 /* main.m */; };
 		06D359D81C9FDC1D003359B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06D359D61C9FDC1D003359B8 /* Main.storyboard */; };
@@ -53,6 +52,7 @@
 		06F54DA51D13F47800119CE8 /* IdentifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F54DA11D13F47800119CE8 /* IdentifyViewController.m */; };
 		06F54DA61D13F47800119CE8 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F54DA31D13F47800119CE8 /* ScanViewController.m */; };
 		06FB69EE1D1A1B7F0046FB24 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FB69ED1D1A1B7F0046FB24 /* FourthViewController.m */; };
+		06FB69F51D1A1EDE0046FB24 /* XHNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FB69F41D1A1EDE0046FB24 /* XHNetwork.m */; };
 		271DC84DAAEB7D313FD97966 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E009C9394413A9156E758FE /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -81,15 +81,11 @@
 		0638BD6C1D17D12A00AB259E /* 立即体验@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "立即体验@2x.png"; sourceTree = "<group>"; };
 		0638BD6D1D17D12A00AB259E /* 立即体验@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "立即体验@3x.png"; sourceTree = "<group>"; };
 		0638BD751D17D74700AB259E /* tapbar_top_line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tapbar_top_line@2x.png"; sourceTree = "<group>"; };
-		0678EFC71D126886000A3B7B /* macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macro.h; sourceTree = "<group>"; };
-		0678EFC81D126886000A3B7B /* PrefixHeader_demo1.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader_demo1.pch; sourceTree = "<group>"; };
 		0678EFCF1D1269CF000A3B7B /* h1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = h1.jpg; sourceTree = "<group>"; };
 		0678EFD01D1269CF000A3B7B /* h2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = h2.jpg; sourceTree = "<group>"; };
 		0678EFD11D1269CF000A3B7B /* h3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = h3.jpg; sourceTree = "<group>"; };
 		0678EFD21D1269CF000A3B7B /* h4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = h4.jpg; sourceTree = "<group>"; };
 		0678EFD31D1269CF000A3B7B /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
-		0695BA111CC0D2C0005F7D1E /* XHNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHNetwork.h; sourceTree = "<group>"; };
-		0695BA121CC0D2C0005F7D1E /* XHNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHNetwork.m; sourceTree = "<group>"; };
 		0695BA231CC0D2D5005F7D1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06D359CA1C9FDC1D003359B8 /* demo1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06D359CE1C9FDC1D003359B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -147,6 +143,10 @@
 		06F54DA31D13F47800119CE8 /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
 		06FB69EC1D1A1B7F0046FB24 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
 		06FB69ED1D1A1B7F0046FB24 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
+		06FB69F01D1A1EDE0046FB24 /* macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macro.h; sourceTree = "<group>"; };
+		06FB69F11D1A1EDE0046FB24 /* PrefixHeader_demo1.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader_demo1.pch; sourceTree = "<group>"; };
+		06FB69F31D1A1EDE0046FB24 /* XHNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHNetwork.h; sourceTree = "<group>"; };
+		06FB69F41D1A1EDE0046FB24 /* XHNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHNetwork.m; sourceTree = "<group>"; };
 		9C422F63287A5216E975477E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9E009C9394413A9156E758FE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD41A87FE6EA02AA025B8F0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -178,15 +178,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0678EFC61D126886000A3B7B /* 头文件 */ = {
-			isa = PBXGroup;
-			children = (
-				0678EFC71D126886000A3B7B /* macro.h */,
-				0678EFC81D126886000A3B7B /* PrefixHeader_demo1.pch */,
-			);
-			path = "头文件";
-			sourceTree = "<group>";
-		};
 		0678EFC91D1269CF000A3B7B /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,15 +214,6 @@
 			path = images;
 			sourceTree = "<group>";
 		};
-		0695BA101CC0D2C0005F7D1E /* 工具类 */ = {
-			isa = PBXGroup;
-			children = (
-				0695BA111CC0D2C0005F7D1E /* XHNetwork.h */,
-				0695BA121CC0D2C0005F7D1E /* XHNetwork.m */,
-			);
-			path = "工具类";
-			sourceTree = "<group>";
-		};
 		06D359C11C9FDC1D003359B8 = {
 			isa = PBXGroup;
 			children = (
@@ -260,10 +242,10 @@
 				06F54D4E1D13951000119CE8 /* AppDelegate.m */,
 				06F54D6C1D13AC2D00119CE8 /* TabBarController.h */,
 				06F54D6D1D13AC2D00119CE8 /* TabBarController.m */,
+				06FB69EF1D1A1EDE0046FB24 /* Header */,
+				06FB69F21D1A1EDE0046FB24 /* Tool */,
 				06F54D451D1394A700119CE8 /* CustomView */,
 				06F54D471D1394A700119CE8 /* ViewController */,
-				0695BA101CC0D2C0005F7D1E /* 工具类 */,
-				0678EFC61D126886000A3B7B /* 头文件 */,
 				0678EFC91D1269CF000A3B7B /* Resource */,
 				06D359D61C9FDC1D003359B8 /* Main.storyboard */,
 				0695BA221CC0D2D5005F7D1E /* LaunchScreen.storyboard */,
@@ -409,6 +391,24 @@
 				06FB69ED1D1A1B7F0046FB24 /* FourthViewController.m */,
 			);
 			path = Fourth;
+			sourceTree = "<group>";
+		};
+		06FB69EF1D1A1EDE0046FB24 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				06FB69F01D1A1EDE0046FB24 /* macro.h */,
+				06FB69F11D1A1EDE0046FB24 /* PrefixHeader_demo1.pch */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		06FB69F21D1A1EDE0046FB24 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				06FB69F31D1A1EDE0046FB24 /* XHNetwork.h */,
+				06FB69F41D1A1EDE0046FB24 /* XHNetwork.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		24ED8B48F3821889C1B45FC7 /* Frameworks */ = {
@@ -631,9 +631,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06FB69F51D1A1EDE0046FB24 /* XHNetwork.m in Sources */,
 				06F54D4F1D13951000119CE8 /* AppDelegate.m in Sources */,
 				06F54D6E1D13AC2D00119CE8 /* TabBarController.m in Sources */,
-				0695BA1E1CC0D2C0005F7D1E /* XHNetwork.m in Sources */,
 				06F54D5C1D139DAF00119CE8 /* ThirdViewController.m in Sources */,
 				06F54D6B1D13A01E00119CE8 /* TabBarItem.m in Sources */,
 				06F54D8F1D13F1A800119CE8 /* ViewControllerDetailNext.m in Sources */,
@@ -796,7 +796,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/demo1/头文件/PrefixHeader_demo1.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/demo1/Header/PrefixHeader_demo1.pch";
 				INFOPLIST_FILE = demo1/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -815,7 +815,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/demo1/头文件/PrefixHeader_demo1.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/demo1/Header/PrefixHeader_demo1.pch";
 				INFOPLIST_FILE = demo1/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
