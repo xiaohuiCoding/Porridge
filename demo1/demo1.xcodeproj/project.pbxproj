@@ -53,6 +53,8 @@
 		06F54DA61D13F47800119CE8 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F54DA31D13F47800119CE8 /* ScanViewController.m */; };
 		06FB69EE1D1A1B7F0046FB24 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FB69ED1D1A1B7F0046FB24 /* FourthViewController.m */; };
 		06FB69F51D1A1EDE0046FB24 /* XHNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FB69F41D1A1EDE0046FB24 /* XHNetwork.m */; };
+		06FB69F81D1A436A0046FB24 /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06FB69F61D1A436A0046FB24 /* LaunchImage@2x.png */; };
+		06FB69F91D1A436A0046FB24 /* LaunchImage@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06FB69F71D1A436A0046FB24 /* LaunchImage@3x.png */; };
 		271DC84DAAEB7D313FD97966 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E009C9394413A9156E758FE /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -147,6 +149,8 @@
 		06FB69F11D1A1EDE0046FB24 /* PrefixHeader_demo1.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader_demo1.pch; sourceTree = "<group>"; };
 		06FB69F31D1A1EDE0046FB24 /* XHNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHNetwork.h; sourceTree = "<group>"; };
 		06FB69F41D1A1EDE0046FB24 /* XHNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHNetwork.m; sourceTree = "<group>"; };
+		06FB69F61D1A436A0046FB24 /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
+		06FB69F71D1A436A0046FB24 /* LaunchImage@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@3x.png"; sourceTree = "<group>"; };
 		9C422F63287A5216E975477E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9E009C9394413A9156E758FE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD41A87FE6EA02AA025B8F0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -210,6 +214,8 @@
 				0678EFD11D1269CF000A3B7B /* h3.jpg */,
 				0678EFD21D1269CF000A3B7B /* h4.jpg */,
 				0678EFD31D1269CF000A3B7B /* LaunchImage.png */,
+				06FB69F61D1A436A0046FB24 /* LaunchImage@2x.png */,
+				06FB69F71D1A436A0046FB24 /* LaunchImage@3x.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -347,12 +353,12 @@
 			children = (
 				06F54D5D1D139DC700119CE8 /* MineViewController.h */,
 				06F54D5E1D139DC700119CE8 /* MineViewController.m */,
-				06F54D9E1D13F47800119CE8 /* GenerateViewController.h */,
-				06F54D9F1D13F47800119CE8 /* GenerateViewController.m */,
-				06F54DA01D13F47800119CE8 /* IdentifyViewController.h */,
-				06F54DA11D13F47800119CE8 /* IdentifyViewController.m */,
 				06F54DA21D13F47800119CE8 /* ScanViewController.h */,
 				06F54DA31D13F47800119CE8 /* ScanViewController.m */,
+				06F54DA01D13F47800119CE8 /* IdentifyViewController.h */,
+				06F54DA11D13F47800119CE8 /* IdentifyViewController.m */,
+				06F54D9E1D13F47800119CE8 /* GenerateViewController.h */,
+				06F54D9F1D13F47800119CE8 /* GenerateViewController.m */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -541,9 +547,11 @@
 				0638BD681D17C79400AB259E /* home_bar_scan@2x.png in Resources */,
 				06F54D811D13F15700119CE8 /* post_normal@2x.png in Resources */,
 				0638BD6F1D17D12A00AB259E /* 立即体验@3x.png in Resources */,
+				06FB69F91D1A436A0046FB24 /* LaunchImage@3x.png in Resources */,
 				0638BD761D17D74700AB259E /* tapbar_top_line@2x.png in Resources */,
 				0678EFDD1D1269CF000A3B7B /* h4.jpg in Resources */,
 				0695BA241CC0D2D5005F7D1E /* LaunchScreen.storyboard in Resources */,
+				06FB69F81D1A436A0046FB24 /* LaunchImage@2x.png in Resources */,
 				06F54D7A1D13F15700119CE8 /* account_normal@2x.png in Resources */,
 				0638BD6A1D17C79400AB259E /* icon_search@2x.png in Resources */,
 				06D359DA1C9FDC1E003359B8 /* Assets.xcassets in Resources */,

@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "ScanViewController.h"
 #import "ViewControllerDetail.h"
 #import "Weather.h"
 #import "XHObserver.h"
@@ -48,7 +49,8 @@
     self.navigationItem.rightBarButtonItem = rightItem;
     
     
-    /*********************三方轮播图的使用**********************/
+    /*********************三方轮播图**********************/
+    
     //本地图片请填写全名
     NSArray *imageNameArray = @[@"h1.jpg",@"h2.jpg",@"h3.jpg",@"h4.jpg"];
     //本地加载图片的轮播器
@@ -60,6 +62,7 @@
     
     
     /*********************KVO的使用**********************/
+    
     //1.自己观察自己
     observer = [[XHObserver alloc] init];
     //给属性赋初值
@@ -80,7 +83,6 @@
     [btn addTarget:self action:@selector(changeValue) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
     
-    
     //2.别人观察自己
     Weather *w = [[Weather alloc] init];
     //给属性赋初值
@@ -95,8 +97,8 @@
     [w removeObserver:s forKeyPath:@"temperature"];
     
     
-    
     /*********************通知的使用**********************/
+    
     //1.监听系统自带的Notification
     UITextField *tf = [[UITextField alloc] initWithFrame:CGRectMake(DSWidth/8, 64 + DSHeight/4 + 54, DSWidth*3/4, 30)];
     tf.backgroundColor = [UIColor lightGrayColor];
@@ -136,7 +138,9 @@
 //扫描
 - (void)scan
 {
-    
+    ScanViewController *scanVC = [[ScanViewController alloc] init];
+    scanVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:scanVC animated:YES];
 }
 
 //搜索
