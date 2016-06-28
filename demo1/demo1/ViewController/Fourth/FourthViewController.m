@@ -30,6 +30,7 @@
     tabView.delegate = self;
     tabView.showsVerticalScrollIndicator = NO;
     [self.view addSubview:tabView];
+    
     [self addObserver:self forKeyPath:@"tbVContentOffSetY" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
     
     NSLog(@"y轴偏移量初始值：%f",tabView.contentOffset.y);
@@ -50,11 +51,9 @@
     static NSString *cellIdentifier = @"cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:cellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
-    cell.imageView.image = [UIImage imageNamed:@"img.png"];
     cell.textLabel.text = dataArray[indexPath.row];
-    cell.detailTextLabel.text = @"副标题";
     return cell;
 }
 
@@ -171,15 +170,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

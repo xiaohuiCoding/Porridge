@@ -25,6 +25,7 @@
 		06D359DA1C9FDC1E003359B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06D359D91C9FDC1E003359B8 /* Assets.xcassets */; };
 		06D359E81C9FDC1E003359B8 /* demo1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D359E71C9FDC1E003359B8 /* demo1Tests.m */; };
 		06D359F31C9FDC1E003359B8 /* demo1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D359F21C9FDC1E003359B8 /* demo1UITests.m */; };
+		06F13F0B1D1D02C000E75BEF /* XHObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F13F0A1D1D02C000E75BEF /* XHObject.m */; };
 		06F54D4F1D13951000119CE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F54D4E1D13951000119CE8 /* AppDelegate.m */; };
 		06F54D531D139D5B00119CE8 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F54D521D139D5B00119CE8 /* BaseViewController.m */; };
 		06F54D561D139D9700119CE8 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F54D551D139D9700119CE8 /* HomeViewController.m */; };
@@ -100,6 +101,8 @@
 		06D359EE1C9FDC1E003359B8 /* demo1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = demo1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06D359F21C9FDC1E003359B8 /* demo1UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = demo1UITests.m; sourceTree = "<group>"; };
 		06D359F41C9FDC1E003359B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06F13F091D1D02C000E75BEF /* XHObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHObject.h; sourceTree = "<group>"; };
+		06F13F0A1D1D02C000E75BEF /* XHObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHObject.m; sourceTree = "<group>"; };
 		06F54D4D1D13951000119CE8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		06F54D4E1D13951000119CE8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		06F54D511D139D5B00119CE8 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -413,6 +416,8 @@
 			children = (
 				06FB69F31D1A1EDE0046FB24 /* XHNetwork.h */,
 				06FB69F41D1A1EDE0046FB24 /* XHNetwork.m */,
+				06F13F091D1D02C000E75BEF /* XHObject.h */,
+				06F13F0A1D1D02C000E75BEF /* XHObject.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -655,6 +660,7 @@
 				06F54D531D139D5B00119CE8 /* BaseViewController.m in Sources */,
 				06F54DA61D13F47800119CE8 /* ScanViewController.m in Sources */,
 				06F54DA51D13F47800119CE8 /* IdentifyViewController.m in Sources */,
+				06F13F0B1D1D02C000E75BEF /* XHObject.m in Sources */,
 				06F54D901D13F1A800119CE8 /* Weather.m in Sources */,
 				06F54D681D139FEC00119CE8 /* TabBar.m in Sources */,
 				06F54DA41D13F47800119CE8 /* GenerateViewController.m in Sources */,
