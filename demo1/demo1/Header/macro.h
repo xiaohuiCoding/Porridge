@@ -13,7 +13,13 @@
 #define DSWidth [[UIScreen mainScreen] bounds].size.width
 #define DSHeight [[UIScreen mainScreen] bounds].size.height
 
-//用户引导
+//用户引导页展示与否的标识
 #define User_Guided @"isGuided"
+
+//广告图片名
+#define AdImageName @"adImageName"
+
+//用户默认存储，用来保存轻量级数据
+#define kNSUserDefaults [NSUserDefaults standardUserDefaults]
 
 #endif /* macro_h */

@@ -30,6 +30,10 @@
     self.navigationItem.title = @"扫描二维码";
     self.view.backgroundColor = [UIColor whiteColor];
     
+    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"header-arrow"] style:UIBarButtonItemStylePlain target:self action:@selector(backToHomePage)];
+    leftItem.tintColor = [UIColor whiteColor];
+    self.navigationItem.leftBarButtonItem = leftItem;
+    
     CGSize windowSize = [UIScreen mainScreen].bounds.size;
     
     CGSize scanSize = CGSizeMake(windowSize.width*3/4, windowSize.width*3/4);
@@ -81,6 +85,11 @@
 - (void)alertView:(UIAlertView *)alertView willDismissWithButtonIndex:(NSInteger)buttonIndex
 {
     [self.session startRunning];
+}
+
+- (void)backToHomePage
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

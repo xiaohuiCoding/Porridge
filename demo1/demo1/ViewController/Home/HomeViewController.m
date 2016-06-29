@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "AdvertiseDetailViewController.h"
 #import "ScanViewController.h"
 #import "ViewControllerDetail.h"
 #import "Weather.h"
@@ -37,6 +38,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //监听广告图被点击了
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pushToAdvertiseDetailPage) name:@"pushToAdvertiseDetail" object:nil];
+    
     
     self.navigationItem.title = @"首页";
     
@@ -133,6 +138,13 @@
     
     //自适应文本展示
     [self autoText];
+}
+
+- (void)pushToAdvertiseDetailPage
+{
+    AdvertiseDetailViewController *advertiseDetailVC = [[AdvertiseDetailViewController alloc] init];
+    advertiseDetailVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:advertiseDetailVC animated:YES];
 }
 
 //扫描

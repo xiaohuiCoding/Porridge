@@ -17,6 +17,9 @@
 
 + (UIWindow *)getWindow;
 
+//获取当前屏幕显示的viewController
++ (UIViewController *)getCurrentVC;
+
 #pragma 键盘事件
 
 //自动隐藏键盘
@@ -84,12 +87,5 @@
 #pragma 动画
 
 + (void)UIViewAnimationTransition:(UIView *)toView typeIndex:(NSInteger)typeIndex duration:(NSTimeInterval)duration animation:(void(^)(void))animation;
-
-
-
-
-
-
-
 
 @end
