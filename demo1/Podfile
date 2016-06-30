@@ -1,6 +1,5 @@
-pod 'MJRefresh'
+# 需要添加的的三方依赖库
+
 pod 'AFNetworking'
 pod 'FMDB'
-pod 'SDWebImage'
-pod 'SDCycleScrollView'
-pod 'Mantle'
+pod 'SDCycleScrollView' # SDCycleScrollView是基于SDWebImage的

@@ -17,10 +17,6 @@ PODS:
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
-  - Mantle (2.0.7):
-    - Mantle/extobjc (= 2.0.7)
-  - Mantle/extobjc (2.0.7)
-  - MJRefresh (3.1.8)
   - SDCycleScrollView (1.65):
     - SDWebImage (~> 3.7)
   - SDWebImage (3.8.1):
@@ -30,16 +26,11 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - FMDB
-  - Mantle
-  - MJRefresh
   - SDCycleScrollView
-  - SDWebImage
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
-  Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
-  MJRefresh: d226bbe0b1ec398f426ba1dc99319b4e51182e19
   SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
 

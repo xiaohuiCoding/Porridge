@@ -10,7 +10,6 @@
 #import "UserGuideViewController.h"
 #import "AdvertiseView.h"
 #import "TabBarController.h"
-//#import "AFNetworkActivityIndicatorManager.h"
 
 @interface AppDelegate ()
 
@@ -22,30 +21,29 @@
     
     NSLog(@"沙盒路径：%@",NSHomeDirectory());
     
-    //[NSThread sleepForTimeInterval:1.0];
+    [NSThread sleepForTimeInterval:1.0];  //延长LaunchImage的展示时间
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
 
+
+/*
+    //用户引导页（图片资源在本地）
     
-//    //用户引导页（图片资源在本地）
+    BOOL isGuided = [[NSUserDefaults standardUserDefaults] boolForKey:User_Guided];
+    if (isGuided) {
+        [self showMainPage];
+    }
+    else {
+        [self showUserGuidePage];
+    }
+ */
     
-//    BOOL isGuided = [[NSUserDefaults standardUserDefaults] boolForKey:User_Guided];
-//    if (isGuided) {
-//        [self showMainPage];
-//    }
-//    else {
-//        [self showUserGuidePage];
-//    }
-    
-    
-    
-    
-    ////
-    [self showMainPage];
     
     
     //广告图（图片资源通过URL加载）
+    
+    [self showMainPage];
     
     //1.判断沙盒中是否存在广告图片，如果存在，直接显示
     NSString *filePath = [self getFilePathWithImageName:[kNSUserDefaults valueForKey:AdImageName]];
@@ -59,14 +57,12 @@
     [self getAdvertiseImage];
     
     
-                                        
     
-//    //设置缓存
-//    NSURLCache *urlCache = [[NSURLCache alloc] initWithMemoryCapacity:4 * 1024 * 1024 diskCapacity:20 * 1024 * 1024 diskPath:nil];
-//    [NSURLCache setSharedURLCache:urlCache];
-//    //添加活动指示器
-//    [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
-    
+/*
+    //设置缓存
+    NSURLCache *urlCache = [[NSURLCache alloc] initWithMemoryCapacity:4 * 1024 * 1024 diskCapacity:20 * 1024 * 1024 diskPath:nil];
+    [NSURLCache setSharedURLCache:urlCache];
+ */
     return YES;
 }
 
