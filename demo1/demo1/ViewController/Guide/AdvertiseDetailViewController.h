@@ -6,8 +6,8 @@
 //  Copyright © 2016年 xinguang. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface AdvertiseDetailViewController : UIViewController
+@interface AdvertiseDetailViewController : BaseViewController
 
 @end

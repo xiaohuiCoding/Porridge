@@ -6,9 +6,9 @@
 //  Copyright © 2016年 xinguang. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface FourthViewController : UIViewController
+@interface FourthViewController : BaseViewController
 
 @property(nonatomic,assign)CGFloat tbVContentOffSetY;
 

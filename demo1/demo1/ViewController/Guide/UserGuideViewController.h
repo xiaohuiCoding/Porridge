@@ -6,9 +6,9 @@
 //  Copyright © 2016年 xinguang. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface UserGuideViewController : UIViewController<UIScrollViewDelegate>
+@interface UserGuideViewController : BaseViewController<UIScrollViewDelegate>
 {
     NSArray       *imageArray;
     UIScrollView  *userGuideScrollView;
