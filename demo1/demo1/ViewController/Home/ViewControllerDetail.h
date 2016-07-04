@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewControllerDetail : UIViewController
+@interface ViewControllerDetail : UIViewController<UITextFieldDelegate>
 
 @property(nonatomic,strong)NSString *urlString;
 

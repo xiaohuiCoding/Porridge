@@ -24,6 +24,7 @@
 		0695BA241CC0D2D5005F7D1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0695BA221CC0D2D5005F7D1E /* LaunchScreen.storyboard */; };
 		06C50AA31D239DBE000BCFA3 /* header-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C50AA11D239DBE000BCFA3 /* header-arrow@2x.png */; };
 		06C50AA41D239DBE000BCFA3 /* header-arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C50AA21D239DBE000BCFA3 /* header-arrow@3x.png */; };
+		06C9D2191D260D41001251AD /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C9D2181D260D41001251AD /* MyViewController.m */; };
 		06D359CF1C9FDC1D003359B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D359CE1C9FDC1D003359B8 /* main.m */; };
 		06D359D81C9FDC1D003359B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06D359D61C9FDC1D003359B8 /* Main.storyboard */; };
 		06D359DA1C9FDC1E003359B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06D359D91C9FDC1E003359B8 /* Assets.xcassets */; };
@@ -100,6 +101,8 @@
 		0695BA231CC0D2D5005F7D1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06C50AA11D239DBE000BCFA3 /* header-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header-arrow@2x.png"; sourceTree = "<group>"; };
 		06C50AA21D239DBE000BCFA3 /* header-arrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header-arrow@3x.png"; sourceTree = "<group>"; };
+		06C9D2171D260D41001251AD /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		06C9D2181D260D41001251AD /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 		06D359CA1C9FDC1D003359B8 /* demo1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06D359CE1C9FDC1D003359B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		06D359D71C9FDC1D003359B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -366,6 +369,8 @@
 		06F54D4A1D1394A700119CE8 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				06C9D2171D260D41001251AD /* MyViewController.h */,
+				06C9D2181D260D41001251AD /* MyViewController.m */,
 				06F54D5D1D139DC700119CE8 /* MineViewController.h */,
 				06F54D5E1D139DC700119CE8 /* MineViewController.m */,
 				06F54DA21D13F47800119CE8 /* ScanViewController.h */,
@@ -680,6 +685,7 @@
 				06F54D531D139D5B00119CE8 /* BaseViewController.m in Sources */,
 				06F54DA61D13F47800119CE8 /* ScanViewController.m in Sources */,
 				06F54DA51D13F47800119CE8 /* IdentifyViewController.m in Sources */,
+				06C9D2191D260D41001251AD /* MyViewController.m in Sources */,
 				06F13F0B1D1D02C000E75BEF /* XHObject.m in Sources */,
 				06F54D901D13F1A800119CE8 /* Weather.m in Sources */,
 				06F54D681D139FEC00119CE8 /* TabBar.m in Sources */,

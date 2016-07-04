@@ -20,11 +20,12 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithTitle:@"back" style:UIBarButtonItemStylePlain target:self action:@selector(returnBack)];
+    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"header-arrow"] style:UIBarButtonItemStylePlain target:self action:@selector(returnBack)];
     leftItem.tintColor = [UIColor whiteColor];
     self.navigationItem.leftBarButtonItem = leftItem;
     
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"push" style:UIBarButtonItemStylePlain target:self action:@selector(toNextPage)];
+    rightItem.tintColor = [UIColor whiteColor];
     self.navigationItem.rightBarButtonItem = rightItem;
     
     UIWebView *webView = [[UIWebView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

@@ -22,7 +22,8 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithTitle:@"back" style:UIBarButtonItemStylePlain target:self action:@selector(returnBack)];
+    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"header-arrow"] style:UIBarButtonItemStylePlain target:self action:@selector(returnBack)];
+    leftItem.tintColor = [UIColor whiteColor];
     self.navigationItem.leftBarButtonItem = leftItem;
     
     

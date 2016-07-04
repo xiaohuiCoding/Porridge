@@ -21,7 +21,7 @@
     
     NSLog(@"沙盒路径：%@",NSHomeDirectory());
     
-    [NSThread sleepForTimeInterval:1.0];  //延长LaunchImage的展示时间
+    //[NSThread sleepForTimeInterval:1.0];  //延长LaunchImage的展示时间
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
@@ -53,7 +53,7 @@
         advertiseView.adImageFilePath = filePath;
         [advertiseView showAdvertisePage];
     }
-    //2.无论沙盒中是否存在广告图片，都需要调用接口，判断广告图片是否更新
+    //2.无论沙盒中是否存在广告图片，都需要调用接口，判断广告图片是否更新（首次安装app启动时不会出现广告图）
     [self getAdvertiseImage];
     
     
