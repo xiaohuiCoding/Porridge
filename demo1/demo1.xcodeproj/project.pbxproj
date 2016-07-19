@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0627F3C01D2B930900A5CBCA /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0627F3BF1D2B930900A5CBCA /* MyCell.m */; };
 		0638BD681D17C79400AB259E /* home_bar_scan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0638BD641D17C79400AB259E /* home_bar_scan@2x.png */; };
 		0638BD691D17C79400AB259E /* home_bar_scan@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0638BD651D17C79400AB259E /* home_bar_scan@3x.png */; };
 		0638BD6A1D17C79400AB259E /* icon_search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0638BD661D17C79400AB259E /* icon_search@2x.png */; };
@@ -21,6 +22,8 @@
 		0678EFDC1D1269CF000A3B7B /* h3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0678EFD11D1269CF000A3B7B /* h3.jpg */; };
 		0678EFDD1D1269CF000A3B7B /* h4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0678EFD21D1269CF000A3B7B /* h4.jpg */; };
 		0678EFDE1D1269CF000A3B7B /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 0678EFD31D1269CF000A3B7B /* LaunchImage.png */; };
+		06811D781D3E453000FD6546 /* MyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 06811D771D3E453000FD6546 /* MyLabel.m */; };
+		06811D7B1D3E473500FD6546 /* XHTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 06811D7A1D3E473500FD6546 /* XHTheme.m */; };
 		0695BA241CC0D2D5005F7D1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0695BA221CC0D2D5005F7D1E /* LaunchScreen.storyboard */; };
 		06C50AA31D239DBE000BCFA3 /* header-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C50AA11D239DBE000BCFA3 /* header-arrow@2x.png */; };
 		06C50AA41D239DBE000BCFA3 /* header-arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C50AA21D239DBE000BCFA3 /* header-arrow@3x.png */; };
@@ -82,6 +85,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0627F3BE1D2B930900A5CBCA /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
+		0627F3BF1D2B930900A5CBCA /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
 		0638BD641D17C79400AB259E /* home_bar_scan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_bar_scan@2x.png"; sourceTree = "<group>"; };
 		0638BD651D17C79400AB259E /* home_bar_scan@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_bar_scan@3x.png"; sourceTree = "<group>"; };
 		0638BD661D17C79400AB259E /* icon_search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_search@2x.png"; sourceTree = "<group>"; };
@@ -98,6 +103,10 @@
 		0678EFD11D1269CF000A3B7B /* h3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = h3.jpg; sourceTree = "<group>"; };
 		0678EFD21D1269CF000A3B7B /* h4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = h4.jpg; sourceTree = "<group>"; };
 		0678EFD31D1269CF000A3B7B /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
+		06811D761D3E453000FD6546 /* MyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLabel.h; sourceTree = "<group>"; };
+		06811D771D3E453000FD6546 /* MyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLabel.m; sourceTree = "<group>"; };
+		06811D791D3E473500FD6546 /* XHTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHTheme.h; sourceTree = "<group>"; };
+		06811D7A1D3E473500FD6546 /* XHTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHTheme.m; sourceTree = "<group>"; };
 		0695BA231CC0D2D5005F7D1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06C50AA11D239DBE000BCFA3 /* header-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header-arrow@2x.png"; sourceTree = "<group>"; };
 		06C50AA21D239DBE000BCFA3 /* header-arrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header-arrow@3x.png"; sourceTree = "<group>"; };
@@ -238,6 +247,15 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		06811D751D3E453000FD6546 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				06811D761D3E453000FD6546 /* MyLabel.h */,
+				06811D771D3E453000FD6546 /* MyLabel.m */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
 		06D359C11C9FDC1D003359B8 = {
 			isa = PBXGroup;
 			children = (
@@ -369,6 +387,8 @@
 		06F54D4A1D1394A700119CE8 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				0627F3BE1D2B930900A5CBCA /* MyCell.h */,
+				0627F3BF1D2B930900A5CBCA /* MyCell.m */,
 				06C9D2171D260D41001251AD /* MyViewController.h */,
 				06C9D2181D260D41001251AD /* MyViewController.m */,
 				06F54D5D1D139DC700119CE8 /* MineViewController.h */,
@@ -435,10 +455,13 @@
 		06FB69F21D1A1EDE0046FB24 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				06811D751D3E453000FD6546 /* Label */,
 				06FB69F31D1A1EDE0046FB24 /* XHNetwork.h */,
 				06FB69F41D1A1EDE0046FB24 /* XHNetwork.m */,
 				06F13F091D1D02C000E75BEF /* XHObject.h */,
 				06F13F0A1D1D02C000E75BEF /* XHObject.m */,
+				06811D791D3E473500FD6546 /* XHTheme.h */,
+				06811D7A1D3E473500FD6546 /* XHTheme.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -670,9 +693,11 @@
 				06FB69F51D1A1EDE0046FB24 /* XHNetwork.m in Sources */,
 				06F54D4F1D13951000119CE8 /* AppDelegate.m in Sources */,
 				06F54D6E1D13AC2D00119CE8 /* TabBarController.m in Sources */,
+				0627F3C01D2B930900A5CBCA /* MyCell.m in Sources */,
 				06F54D5C1D139DAF00119CE8 /* ThirdViewController.m in Sources */,
 				06F54D6B1D13A01E00119CE8 /* TabBarItem.m in Sources */,
 				0641CFA21D22592B006CA897 /* AdvertiseDetailViewController.m in Sources */,
+				06811D7B1D3E473500FD6546 /* XHTheme.m in Sources */,
 				06F54D8F1D13F1A800119CE8 /* ViewControllerDetailNext.m in Sources */,
 				06F54D561D139D9700119CE8 /* HomeViewController.m in Sources */,
 				06F54D591D139DA600119CE8 /* SecondViewController.m in Sources */,
@@ -684,6 +709,7 @@
 				06F54D651D139F7C00119CE8 /* UserGuideViewController.m in Sources */,
 				06F54D531D139D5B00119CE8 /* BaseViewController.m in Sources */,
 				06F54DA61D13F47800119CE8 /* ScanViewController.m in Sources */,
+				06811D781D3E453000FD6546 /* MyLabel.m in Sources */,
 				06F54DA51D13F47800119CE8 /* IdentifyViewController.m in Sources */,
 				06C9D2191D260D41001251AD /* MyViewController.m in Sources */,
 				06F13F0B1D1D02C000E75BEF /* XHObject.m in Sources */,

@@ -16,6 +16,8 @@
 #import "SDCycleScrollView.h"
 #import "AFNetworking.h"
 #import "FMDatabase.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
+
 
 //宏定义头文件
 #import "macro.h"

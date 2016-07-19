@@ -12,6 +12,7 @@
 #import "ViewControllerDetail.h"
 #import "Weather.h"
 #import "XHObserver.h"
+#import "MyLabel.h"
 
 @interface HomeViewController ()<SDCycleScrollViewDelegate>
 {
@@ -135,9 +136,21 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(acceptChange:) name:@"noti_name" object:nil];
     
     
+     MyLabel *readNewsLable =[[MyLabel alloc] initWithFrame:CGRectZero];
+     readNewsLable.textColor =[UIColor redColor];
+     readNewsLable.lineBreakMode = NSLineBreakByCharWrapping;
+     readNewsLable.backgroundColor = [UIColor greenColor];
+     readNewsLable.font = [UIFont systemFontOfSize:15];
+     [readNewsLable setText:@"啊啊啊啊啊啊啊啊啊啊啊!啊啊?啊啊啊啊啊啊啊,啊啊啊啊啊啊啊啊啊啊啊啊333啊啊啊啊啊啊aaaa33333333333啊啊啊啊啊啊,!啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊2333333333333333333333啊啊啊啊啊3333啊啊啊12312312啊啊啊啊问123123啊大大大33123123213请问啊啊大大大三大大声地"];
+     // 设置label的frame值
+     readNewsLable.frame =  CGRectMake(0, 300, 320, [readNewsLable getAttributedStringHeightWidthValue:320]) ;
+     readNewsLable.numberOfLines = 0;
+     readNewsLable.linesSpacing = 10.0f;
+     readNewsLable.characterSpacing = 5.0f;
+    [self.view addSubview:readNewsLable];
     
     //自适应文本展示
-    [self autoText];
+    //[self autoText];
 }
 
 - (void)pushToAdvertiseDetailPage

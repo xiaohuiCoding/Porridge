@@ -3,3 +3,4 @@
 pod 'AFNetworking'
 pod 'FMDB'
 pod 'SDCycleScrollView' # SDCycleScrollView是基于SDWebImage的
+pod 'ReactiveCocoa','~>2.1.8'
