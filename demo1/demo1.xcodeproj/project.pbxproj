@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0627F3C01D2B930900A5CBCA /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0627F3BF1D2B930900A5CBCA /* MyCell.m */; };
+		062BA01F1D3F453A00CF6890 /* XHTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 062BA01E1D3F453A00CF6890 /* XHTools.m */; };
 		0638BD681D17C79400AB259E /* home_bar_scan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0638BD641D17C79400AB259E /* home_bar_scan@2x.png */; };
 		0638BD691D17C79400AB259E /* home_bar_scan@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0638BD651D17C79400AB259E /* home_bar_scan@3x.png */; };
 		0638BD6A1D17C79400AB259E /* icon_search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0638BD661D17C79400AB259E /* icon_search@2x.png */; };
@@ -88,6 +89,9 @@
 /* Begin PBXFileReference section */
 		0627F3BE1D2B930900A5CBCA /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
 		0627F3BF1D2B930900A5CBCA /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
+		062BA01C1D3F451000CF6890 /* interface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = interface.h; sourceTree = "<group>"; };
+		062BA01D1D3F453A00CF6890 /* XHTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHTools.h; sourceTree = "<group>"; };
+		062BA01E1D3F453A00CF6890 /* XHTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHTools.m; sourceTree = "<group>"; };
 		0638BD641D17C79400AB259E /* home_bar_scan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_bar_scan@2x.png"; sourceTree = "<group>"; };
 		0638BD651D17C79400AB259E /* home_bar_scan@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_bar_scan@3x.png"; sourceTree = "<group>"; };
 		0638BD661D17C79400AB259E /* icon_search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_search@2x.png"; sourceTree = "<group>"; };
@@ -452,6 +456,7 @@
 			isa = PBXGroup;
 			children = (
 				06FB69F01D1A1EDE0046FB24 /* macro.h */,
+				062BA01C1D3F451000CF6890 /* interface.h */,
 				06FB69F11D1A1EDE0046FB24 /* PrefixHeader_demo1.pch */,
 			);
 			path = Header;
@@ -467,6 +472,8 @@
 				06F13F0A1D1D02C000E75BEF /* XHObject.m */,
 				06811D791D3E473500FD6546 /* XHTheme.h */,
 				06811D7A1D3E473500FD6546 /* XHTheme.m */,
+				062BA01D1D3F453A00CF6890 /* XHTools.h */,
+				062BA01E1D3F453A00CF6890 /* XHTools.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -763,6 +770,7 @@
 				06D359CF1C9FDC1D003359B8 /* main.m in Sources */,
 				06FB69EE1D1A1B7F0046FB24 /* FourthViewController.m in Sources */,
 				06F54D651D139F7C00119CE8 /* UserGuideViewController.m in Sources */,
+				062BA01F1D3F453A00CF6890 /* XHTools.m in Sources */,
 				06F54D531D139D5B00119CE8 /* BaseViewController.m in Sources */,
 				06F54DA61D13F47800119CE8 /* ScanViewController.m in Sources */,
 				06811D781D3E453000FD6546 /* MyLabel.m in Sources */,

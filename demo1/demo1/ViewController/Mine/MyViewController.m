@@ -12,47 +12,25 @@
 {
     NSArray *sectionArray;
     NSArray *leftImageArray;
-    
     UITableView *tabView;
+    
     UIImageView *photoImageView;
     UILabel     *nickNameLb;
     UILabel     *userNameLb;
-    
-    UISwitch *mySwitch;
 }
 @end
 
 @implementation MyViewController
 
-- (void)initHeaderView
-{
-    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, DSWidth, 160)];
-    headerView.backgroundColor = [UIColor purpleColor];
-    tabView.tableHeaderView = headerView;
-    
-    photoImageView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 20, 60, 60)];
-    [headerView addSubview:photoImageView];
-    
-    //nickNameLb = [UILabel alloc] initWithFrame:CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
     self.navigationItem.title = @"我";
-    
-    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"style" style:UIBarButtonItemStylePlain target:self action:@selector(changeStyle)];
-    rightItem.tintColor = [UIColor whiteColor];
-    self.navigationItem.rightBarButtonItem = rightItem;
-    
-//    mySwitch = [[UISwitch alloc] initWithFrame:CGRectMake(100, 100, 100, 30)];
-//    [mySwitch addTarget:self action:@selector(changeStyle) forControlEvents:UIControlEventValueChanged];
-//    [self.view addSubview:mySwitch];
     
     sectionArray = [NSArray arrayWithObjects:@"我的订单",@"我的抽奖记录",@"我的发布",@"我的消息",@"充值记录",@"推荐好友",@"设置",@"关于我们", nil];
     leftImageArray = [NSArray arrayWithObjects:@"My_order",@"My_prize",@"My_fabu",@"My_message",@"My_chongzhi",@"My_share",@"My_setting",@"My_about", nil];
     
-    tabView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, DSWidth, DSHeight-64) style:UITableViewStylePlain];
+    tabView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, DSWidth, DSHeight-64-49) style:UITableViewStylePlain];
     tabView.separatorStyle = UITableViewCellSeparatorStyleNone;
     tabView.showsVerticalScrollIndicator = NO;
     tabView.bounces = NO;
@@ -63,14 +41,27 @@
     [self initHeaderView];
 }
 
-- (void)changeStyle
+- (void)initHeaderView
 {
-    if (mySwitch.on) {
-        [UIApplication sharedApplication].delegate.window.backgroundColor = [UIColor blackColor];
-    }
-    else {
-        [UIApplication sharedApplication].delegate.window.backgroundColor = [UIColor whiteColor];
-    }
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, DSWidth, 161)];
+    headerView.backgroundColor = [UIColor purpleColor];
+    tabView.tableHeaderView = headerView;
+    
+    photoImageView = [[UIImageView alloc] initWithFrame:CGRectMake(5, 5, 70, 70)];
+    photoImageView.layer.cornerRadius = 35;
+    photoImageView.layer.masksToBounds = YES;
+    [photoImageView sd_setImageWithURL:[NSURL URLWithString:@""] placeholderImage:[UIImage imageNamed:@""]];
+    photoImageView.userInteractionEnabled = YES;
+    [headerView addSubview:photoImageView];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(checkPhoto)];
+    [photoImageView addGestureRecognizer:tap];
+    
+    //nickNameLb = [XHObject ]
+}
+
+- (void)checkPhoto
+{
+    
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView

@@ -7,6 +7,7 @@
 //
 
 #import "XHNetwork.h"
+#import "AFNetworking.h"
 
 @implementation XHNetwork
 

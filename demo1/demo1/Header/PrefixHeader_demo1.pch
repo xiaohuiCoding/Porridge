@@ -9,17 +9,15 @@
 #ifndef PrefixHeader_demo1_pch
 #define PrefixHeader_demo1_pch
 
-// Include any system framework and library headers here that should be included in all compilation units.
-// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
-
-//三方类库头文件
-#import "SDCycleScrollView.h"
-#import "AFNetworking.h"
-//#import "FMDatabase.h"
-//#import <ReactiveCocoa/ReactiveCocoa.h>
-
-
-//宏定义头文件
+//宏定义
 #import "macro.h"
+
+//三方类库
+#import "SDCycleScrollView.h"
+#import "UIImageView+WebCache.h"
+
+//工具类
+#import "XHNetwork.h"
+#import "XHObject.h"
 
 #endif /* PrefixHeader_demo1_pch */
