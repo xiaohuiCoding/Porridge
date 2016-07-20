@@ -1,6 +1,13 @@
-# 需要添加的的三方依赖库
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, "7.0"
+
+target 'demo1' do
 
 pod 'AFNetworking'
-pod 'FMDB'
-pod 'SDCycleScrollView' # SDCycleScrollView是基于SDWebImage的
-pod 'ReactiveCocoa','~>2.1.8'
+pod 'SDCycleScrollView'
+end
+
+target 'demo1Tests' do
+
+end

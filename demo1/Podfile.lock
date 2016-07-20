@@ -14,15 +14,6 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - FMDB (2.6.2):
-    - FMDB/standard (= 2.6.2)
-  - FMDB/standard (2.6.2)
-  - ReactiveCocoa (2.1.8):
-    - ReactiveCocoa/Core (= 2.1.8)
-    - ReactiveCocoa/no-arc (= 2.1.8)
-  - ReactiveCocoa/Core (2.1.8):
-    - ReactiveCocoa/no-arc
-  - ReactiveCocoa/no-arc (2.1.8)
   - SDCycleScrollView (1.65):
     - SDWebImage (~> 3.7)
   - SDWebImage (3.8.1):
@@ -31,15 +22,13 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
-  - FMDB
-  - ReactiveCocoa (~> 2.1.8)
   - SDCycleScrollView
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
-  ReactiveCocoa: f89f2e009a87951b50321bf9feb958823fcc617e
   SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: d55dba416d823534e99e2064501e3d295e4b1ef5
+
+COCOAPODS: 1.0.1
