@@ -7,13 +7,12 @@
 //
 
 #import "XHNetwork.h"
-#import "AFNetworking.h"
 
 @implementation XHNetwork
 
 + (XHNetwork *)sharedInstance
 {
-    static XHNetwork *netWork;
+    static XHNetwork *netWork = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         netWork = [[XHNetwork alloc] init];

@@ -27,6 +27,11 @@
     self.window.backgroundColor = [UIColor whiteColor];
 
 
+    
+    [self showMainPage];
+    
+    
+    
 /*
     //用户引导页（图片资源在本地）
     
@@ -40,7 +45,8 @@
  */
     
     
-    
+
+/*
     //广告图（图片资源通过URL加载）
     
     [self showMainPage];
@@ -55,6 +61,7 @@
     }
     //2.无论沙盒中是否存在广告图片，都需要调用接口，判断广告图片是否更新（首次安装app启动时不会出现广告图）
     [self getAdvertiseImage];
+ */
     
     
     

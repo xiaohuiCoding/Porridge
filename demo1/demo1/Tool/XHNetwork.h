@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "AFNetworking.h"
+
 typedef void (^XHNetworkBlock)(id obj,NSError *error);
 typedef void (^XHDownloadBlock)(NSString *filePath, float progressNumber, NSString *progressString,NSError *error);
 

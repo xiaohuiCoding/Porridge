@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		061B36CC1D50705700F917D2 /* MyMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 061B36CB1D50705700F917D2 /* MyMusicViewController.m */; };
+		061B36CF1D50716000F917D2 /* AVAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 061B36CE1D50716000F917D2 /* AVAudioManager.m */; };
 		0627F3C01D2B930900A5CBCA /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0627F3BF1D2B930900A5CBCA /* MyCell.m */; };
 		062BA01F1D3F453A00CF6890 /* XHTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 062BA01E1D3F453A00CF6890 /* XHTools.m */; };
 		0638BD681D17C79400AB259E /* home_bar_scan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0638BD641D17C79400AB259E /* home_bar_scan@2x.png */; };
@@ -87,6 +89,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		061B36CA1D50705700F917D2 /* MyMusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMusicViewController.h; sourceTree = "<group>"; };
+		061B36CB1D50705700F917D2 /* MyMusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMusicViewController.m; sourceTree = "<group>"; };
+		061B36CD1D50716000F917D2 /* AVAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAudioManager.h; sourceTree = "<group>"; };
+		061B36CE1D50716000F917D2 /* AVAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAudioManager.m; sourceTree = "<group>"; };
 		0627F3BE1D2B930900A5CBCA /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
 		0627F3BF1D2B930900A5CBCA /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
 		062BA01C1D3F451000CF6890 /* interface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = interface.h; sourceTree = "<group>"; };
@@ -396,6 +402,8 @@
 		06F54D4A1D1394A700119CE8 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				061B36CA1D50705700F917D2 /* MyMusicViewController.h */,
+				061B36CB1D50705700F917D2 /* MyMusicViewController.m */,
 				0627F3BE1D2B930900A5CBCA /* MyCell.h */,
 				0627F3BF1D2B930900A5CBCA /* MyCell.m */,
 				06C9D2171D260D41001251AD /* MyViewController.h */,
@@ -474,6 +482,8 @@
 				06811D7A1D3E473500FD6546 /* XHTheme.m */,
 				062BA01D1D3F453A00CF6890 /* XHTools.h */,
 				062BA01E1D3F453A00CF6890 /* XHTools.m */,
+				061B36CD1D50716000F917D2 /* AVAudioManager.h */,
+				061B36CE1D50716000F917D2 /* AVAudioManager.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -757,12 +767,14 @@
 				06F54D4F1D13951000119CE8 /* AppDelegate.m in Sources */,
 				06F54D6E1D13AC2D00119CE8 /* TabBarController.m in Sources */,
 				0627F3C01D2B930900A5CBCA /* MyCell.m in Sources */,
+				061B36CC1D50705700F917D2 /* MyMusicViewController.m in Sources */,
 				06F54D5C1D139DAF00119CE8 /* ThirdViewController.m in Sources */,
 				06F54D6B1D13A01E00119CE8 /* TabBarItem.m in Sources */,
 				0641CFA21D22592B006CA897 /* AdvertiseDetailViewController.m in Sources */,
 				06811D7B1D3E473500FD6546 /* XHTheme.m in Sources */,
 				06F54D8F1D13F1A800119CE8 /* ViewControllerDetailNext.m in Sources */,
 				06F54D561D139D9700119CE8 /* HomeViewController.m in Sources */,
+				061B36CF1D50716000F917D2 /* AVAudioManager.m in Sources */,
 				06F54D591D139DA600119CE8 /* SecondViewController.m in Sources */,
 				06F54D911D13F1A800119CE8 /* XHObserver.m in Sources */,
 				0641CFA51D22597E006CA897 /* AdvertiseView.m in Sources */,
