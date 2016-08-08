@@ -1,26 +1,32 @@
 //
-//  AVAudioManager.m
+//  XHAVVideoManager.m
 //  demo1
 //
-//  Created by 冯小辉 on 16/8/2.
+//  Created by 冯小辉 on 16/8/8.
 //  Copyright © 2016年 xinguang. All rights reserved.
 //
 
-#import "AVAudioManager.h"
+#import "XHAVVideoManager.h"
 
-@implementation AVAudioManager
+@implementation XHAVVideoManager
 
-+ (AVAudioManager *)sharedManager
+- (void)dealloc
 {
-    static AVAudioManager *manager = nil;
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemDidPlayToEndTimeNotification object:item];
+}
+
++ (XHAVVideoManager *)sharedManager
+{
+    static XHAVVideoManager *manager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        manager = [[AVAudioManager alloc] init];
+        manager = [[XHAVVideoManager alloc] init];
     });
     return manager;
 }
 
 #pragma mark - lazy load
+
 - (AVPlayer *)player
 {
     if (!_player) {
@@ -34,16 +40,22 @@
     if (item) {
         [item removeObserver:self forKeyPath:@"status"];
     }
-    item = [[AVPlayerItem alloc] initWithURL:[NSURL URLWithString:urlString]];
-    [self.player replaceCurrentItemWithPlayerItem:item];
-    //self.player = [[AVPlayer alloc] initWithPlayerItem:item];
     
+    item = [[AVPlayerItem alloc] initWithURL:[NSURL URLWithString:urlString]];
+    //self.player = [[AVPlayer alloc] initWithPlayerItem:item];
+    [self.player replaceCurrentItemWithPlayerItem:item];
+    self.playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.player];
+    self.playerLayer.frame = CGRectMake(0, 260, DSWidth, 200);
+    self.playerLayer.videoGravity = AVLayerVideoGravityResizeAspect;
+    self.playerLayer.backgroundColor = [UIColor blackColor].CGColor;
+    [[self getCurrentVC].view.layer addSublayer:self.playerLayer];
+
     [item addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(SingleCycle) name:AVPlayerItemDidPlayToEndTimeNotification object:item];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(singleCycle) name:AVPlayerItemDidPlayToEndTimeNotification object:item];
 }
 
-- (void)SingleCycle
+- (void)singleCycle
 {
     [self.player seekToTime:CMTimeMake(0, 1)];
     [self play];
@@ -69,6 +81,8 @@
     NSLog(@"the song is paused!");
 }
 
+#pragma mark - observer
+
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
 {
     NSLog(@"keyPath = %@, change = %@", keyPath, change);
@@ -82,7 +96,7 @@
         case AVPlayerItemStatusUnknown:
             NSLog(@"unknown status!");
             break;
-        
+            
         case AVPlayerItemStatusReadyToPlay:
             NSLog(@"ready to play!");
             isReady = YES;
@@ -96,6 +110,16 @@
         default:
             break;
     }
+}
+
+//获取当前屏幕显示的viewcontroller
+- (UIViewController *)getCurrentVC
+{
+    UIViewController *currentVC = [[UIApplication sharedApplication] keyWindow].rootViewController;
+    while ([currentVC presentedViewController] != nil) {
+        currentVC = [currentVC presentedViewController];
+    }
+    return currentVC;
 }
 
 @end

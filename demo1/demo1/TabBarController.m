@@ -14,6 +14,7 @@
 //#import "MineViewController.h"
 //#import "MyViewController.h"
 #import "MyMusicViewController.h"
+#import "MyMovieViewController.h"
 #import "TabBar.h"
 #import "TabBarItem.h"
 
@@ -59,8 +60,13 @@
 //    [nav5.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor], NSFontAttributeName:[UIFont systemFontOfSize:20.0]}];
     
     
-    MyMusicViewController *myMusicVC = [[MyMusicViewController alloc] init];
-    UINavigationController *nav5 = [[UINavigationController alloc] initWithRootViewController:myMusicVC];
+//    MyMusicViewController *myMusicVC = [[MyMusicViewController alloc] init];
+//    UINavigationController *nav5 = [[UINavigationController alloc] initWithRootViewController:myMusicVC];
+//    nav5.navigationBar.barTintColor = [UIColor purpleColor];
+//    [nav5.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor], NSFontAttributeName:[UIFont systemFontOfSize:20.0]}];
+    
+    MyMovieViewController *myMovieVC = [[MyMovieViewController alloc] init];
+    UINavigationController *nav5 = [[UINavigationController alloc] initWithRootViewController:myMovieVC];
     nav5.navigationBar.barTintColor = [UIColor purpleColor];
     [nav5.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor], NSFontAttributeName:[UIFont systemFontOfSize:20.0]}];
     

@@ -49,6 +49,17 @@
     return currVC;
 }
 
+//获取当前屏幕显示的viewcontroller
+- (UIViewController *)getCurrentVC
+{
+    UIViewController *currentVC = [[UIApplication sharedApplication] keyWindow].rootViewController;
+    while ([currentVC presentedViewController] != nil) {
+        currentVC = [currentVC presentedViewController];
+    }
+    return currentVC;
+}
+
+#pragma mark - observer
 #pragma 键盘事件
 
 //自动隐藏键盘
@@ -181,7 +192,7 @@
 {
     const char *cStr = [string UTF8String];
     unsigned char digest[CC_MD5_DIGEST_LENGTH];
-    CC_MD5( cStr, strlen(cStr), digest );
+    CC_MD5( cStr, (CC_LONG)strlen(cStr), digest );
     
     NSMutableString *output = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
     

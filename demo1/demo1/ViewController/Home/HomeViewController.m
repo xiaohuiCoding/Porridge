@@ -29,7 +29,7 @@
     //移除观察者
     [observer removeObserver:self forKeyPath:@"score"];
     
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    //[[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event

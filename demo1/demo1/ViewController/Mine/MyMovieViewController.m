@@ -1,33 +1,31 @@
 //
-//  MyMusicViewController.m
+//  MyMovieViewController.m
 //  demo1
 //
-//  Created by 冯小辉 on 16/8/2.
+//  Created by 冯小辉 on 16/8/4.
 //  Copyright © 2016年 xinguang. All rights reserved.
 //
 
-#import "MyMusicViewController.h"
+#import "MyMovieViewController.h"
 
-#import "XHAVAudioManager.h"
+#import "XHAVVideoManager.h"
 
-@interface MyMusicViewController ()
+@interface MyMovieViewController ()
 {
     NSArray   *urlStringArray;
     NSInteger currentIndex;
 }
 @end
 
-@implementation MyMusicViewController
+@implementation MyMovieViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    urlStringArray = @[@"http://m1.music.126.net/gpi8Adr_-pfCuP7ZXk_F2w==/2926899953898363.mp3",
-                       @"http://data.5sing.kgimg.com/G061/M0A/03/13/HZQEAFb493iAOeg5AHMiAfzZU0E739.mp3",
-                       @"http://m1.music.126.net/gpi8Adr_-pfCuP7ZXk_F2w==/2926899953898363.mp3",
-                       @"http://data.5sing.kgimg.com/G061/M0A/03/13/HZQEAFb493iAOeg5AHMiAfzZU0E739.mp3"];
+    urlStringArray = @[@"http://static.tripbe.com/videofiles/20121214/9533522808.f4v.mp4",
+                       @"http://v.jxvdy.com/sendfile/w5bgP3A8JgiQQo5l0hvoNGE2H16WbN09X-ONHPq3P3C1BISgf7C-qVs6_c8oaw3zKScO78I--b0BGFBRxlpw13sf2e54QA"];
     
-    UIButton *btn1 = [XHObject newButton:CGRectMake(100, 100, 60, 40) title:@"第一首" titleColor:nil normalBkg:nil highlightedBkg:nil];
+    UIButton *btn1 = [XHObject newButton:CGRectMake(100, 100, 60, 40) title:@"第一部" titleColor:nil normalBkg:nil highlightedBkg:nil];
     btn1.backgroundColor = [UIColor redColor];
     [btn1 addTarget:self action:@selector(playTheFirst:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn1];
@@ -36,13 +34,13 @@
     btn2.backgroundColor = [UIColor redColor];
     [btn2 addTarget:self action:@selector(playPause) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn2];
-
-    UIButton *btn3 = [XHObject newButton:CGRectMake(100, 200, 60, 40) title:@"上一首" titleColor:nil normalBkg:nil highlightedBkg:nil];
+    
+    UIButton *btn3 = [XHObject newButton:CGRectMake(100, 200, 60, 40) title:@"上一部" titleColor:nil normalBkg:nil highlightedBkg:nil];
     btn3.backgroundColor = [UIColor redColor];
     [btn3 addTarget:self action:@selector(playTheLast:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn3];
     
-    UIButton *btn4 = [XHObject newButton:CGRectMake(200, 200, 60, 40) title:@"下一首" titleColor:nil normalBkg:nil highlightedBkg:nil];
+    UIButton *btn4 = [XHObject newButton:CGRectMake(200, 200, 60, 40) title:@"下一部" titleColor:nil normalBkg:nil highlightedBkg:nil];
     btn4.backgroundColor = [UIColor redColor];
     [btn4 addTarget:self action:@selector(playTheNext:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn4];
@@ -53,7 +51,13 @@
 - (void)playTheFirst:(NSString *)url
 {
     url = urlStringArray[0];
-    [[XHAVAudioManager sharedManager] playWithURLString:url];
+    [[XHAVVideoManager sharedManager] playWithURLString:url];
+//    self.playerLayer = [AVPlayerLayer playerLayerWithPlayer:[XHAVAudioManager sharedManager].player];
+//    self.playerLayer.frame = CGRectMake(0, 260, DSWidth, 200);
+//    self.playerLayer.videoGravity = AVLayerVideoGravityResizeAspect;
+//    self.playerLayer.backgroundColor = [UIColor blackColor].CGColor;
+//    [self.view.layer addSublayer:self.playerLayer];
+
     
     currentIndex = 0;
     
@@ -62,7 +66,7 @@
 
 - (void)playPause
 {
-    [[XHAVAudioManager sharedManager] pause];
+    [[XHAVVideoManager sharedManager] pause];
 }
 
 - (void)playTheLast:(NSString *)url
@@ -73,7 +77,7 @@
     
     currentIndex --;
     url = urlStringArray[currentIndex];
-    [[XHAVAudioManager sharedManager] playWithURLString:url];
+    [[XHAVVideoManager sharedManager] playWithURLString:url];
     
     NSLog(@"currentIndex = %ld", currentIndex);
 }
@@ -86,7 +90,7 @@
     
     currentIndex ++;
     url = urlStringArray[currentIndex];
-    [[XHAVAudioManager sharedManager] playWithURLString:url];
+    [[XHAVVideoManager sharedManager] playWithURLString:url];
     
     NSLog(@"currentIndex = %ld", currentIndex);
 }

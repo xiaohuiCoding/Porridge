@@ -1,8 +1,8 @@
 //
-//  AVAudioManager.h
+//  XHAVAudioManager.h
 //  demo1
 //
-//  Created by 冯小辉 on 16/8/2.
+//  Created by 冯小辉 on 16/8/8.
 //  Copyright © 2016年 xinguang. All rights reserved.
 //
 
@@ -10,15 +10,16 @@
 
 #import <AVFoundation/AVFoundation.h>
 
-@interface AVAudioManager : NSObject
+@interface XHAVAudioManager : NSObject
 {
     BOOL isReady;
     BOOL isPlaying;
     AVPlayerItem *item;
 }
+
 @property (nonatomic, strong) AVPlayer *player;
 
-+ (AVAudioManager *)sharedManager;
++ (XHAVAudioManager *)sharedManager;
 
 - (AVPlayer *)player;
 
