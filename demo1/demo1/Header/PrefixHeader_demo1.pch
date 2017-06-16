@@ -20,7 +20,7 @@
 
 //工具类
 #import "XHNetwork.h"
-#import "XHObject.h"
+//#import "XHObject.h"
 #import "GlobalObject.h"
 #import "LWPrivacyUtils.h"
 

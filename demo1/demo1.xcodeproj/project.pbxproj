@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		061B36CC1D50705700F917D2 /* MyMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 061B36CB1D50705700F917D2 /* MyMusicViewController.m */; };
 		0627F3C01D2B930900A5CBCA /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0627F3BF1D2B930900A5CBCA /* MyCell.m */; };
-		062BA01F1D3F453A00CF6890 /* XHTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 062BA01E1D3F453A00CF6890 /* XHTools.m */; };
 		0638BD681D17C79400AB259E /* home_bar_scan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0638BD641D17C79400AB259E /* home_bar_scan@2x.png */; };
 		0638BD691D17C79400AB259E /* home_bar_scan@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0638BD651D17C79400AB259E /* home_bar_scan@3x.png */; };
 		0638BD6A1D17C79400AB259E /* icon_search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0638BD661D17C79400AB259E /* icon_search@2x.png */; };
@@ -38,7 +37,6 @@
 		06D359DA1C9FDC1E003359B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06D359D91C9FDC1E003359B8 /* Assets.xcassets */; };
 		06D359E81C9FDC1E003359B8 /* demo1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D359E71C9FDC1E003359B8 /* demo1Tests.m */; };
 		06D359F31C9FDC1E003359B8 /* demo1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D359F21C9FDC1E003359B8 /* demo1UITests.m */; };
-		06F13F0B1D1D02C000E75BEF /* XHObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F13F0A1D1D02C000E75BEF /* XHObject.m */; };
 		06F54D4F1D13951000119CE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F54D4E1D13951000119CE8 /* AppDelegate.m */; };
 		06F54D531D139D5B00119CE8 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F54D521D139D5B00119CE8 /* BaseViewController.m */; };
 		06F54D561D139D9700119CE8 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F54D551D139D9700119CE8 /* HomeViewController.m */; };
@@ -99,8 +97,6 @@
 		0627F3BE1D2B930900A5CBCA /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
 		0627F3BF1D2B930900A5CBCA /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
 		062BA01C1D3F451000CF6890 /* interface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = interface.h; sourceTree = "<group>"; };
-		062BA01D1D3F453A00CF6890 /* XHTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHTools.h; sourceTree = "<group>"; };
-		062BA01E1D3F453A00CF6890 /* XHTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHTools.m; sourceTree = "<group>"; };
 		0638BD641D17C79400AB259E /* home_bar_scan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_bar_scan@2x.png"; sourceTree = "<group>"; };
 		0638BD651D17C79400AB259E /* home_bar_scan@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_bar_scan@3x.png"; sourceTree = "<group>"; };
 		0638BD661D17C79400AB259E /* icon_search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_search@2x.png"; sourceTree = "<group>"; };
@@ -143,8 +139,6 @@
 		06D359EE1C9FDC1E003359B8 /* demo1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = demo1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06D359F21C9FDC1E003359B8 /* demo1UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = demo1UITests.m; sourceTree = "<group>"; };
 		06D359F41C9FDC1E003359B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		06F13F091D1D02C000E75BEF /* XHObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHObject.h; sourceTree = "<group>"; };
-		06F13F0A1D1D02C000E75BEF /* XHObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHObject.m; sourceTree = "<group>"; };
 		06F54D4D1D13951000119CE8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		06F54D4E1D13951000119CE8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		06F54D511D139D5B00119CE8 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -496,10 +490,6 @@
 				06FB69F41D1A1EDE0046FB24 /* XHNetwork.m */,
 				4B2B1FE81EF3824300848C8B /* GlobalObject.h */,
 				4B2B1FE91EF3824300848C8B /* GlobalObject.m */,
-				062BA01D1D3F453A00CF6890 /* XHTools.h */,
-				062BA01E1D3F453A00CF6890 /* XHTools.m */,
-				06F13F091D1D02C000E75BEF /* XHObject.h */,
-				06F13F0A1D1D02C000E75BEF /* XHObject.m */,
 				06811D791D3E473500FD6546 /* XHTheme.h */,
 				06811D7A1D3E473500FD6546 /* XHTheme.m */,
 				06C5E4541D585A1900A7D474 /* XHAVAudioManager.h */,
@@ -834,14 +824,12 @@
 				06D359CF1C9FDC1D003359B8 /* main.m in Sources */,
 				06FB69EE1D1A1B7F0046FB24 /* FourthViewController.m in Sources */,
 				06F54D651D139F7C00119CE8 /* UserGuideViewController.m in Sources */,
-				062BA01F1D3F453A00CF6890 /* XHTools.m in Sources */,
 				06F54D531D139D5B00119CE8 /* BaseViewController.m in Sources */,
 				06F54DA61D13F47800119CE8 /* ScanViewController.m in Sources */,
 				06B533A31D535D6C00855EE6 /* MyMovieViewController.m in Sources */,
 				06811D781D3E453000FD6546 /* MyLabel.m in Sources */,
 				06F54DA51D13F47800119CE8 /* IdentifyViewController.m in Sources */,
 				06C9D2191D260D41001251AD /* MyViewController.m in Sources */,
-				06F13F0B1D1D02C000E75BEF /* XHObject.m in Sources */,
 				06F54D901D13F1A800119CE8 /* Weather.m in Sources */,
 				06F54D681D139FEC00119CE8 /* TabBar.m in Sources */,
 				06F54DA41D13F47800119CE8 /* GenerateViewController.m in Sources */,
