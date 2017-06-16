@@ -85,14 +85,14 @@
         [attributedString addAttribute:(id)kCTForegroundColorAttributeName value:(id)(self.textColor.CGColor) range:NSMakeRange(0,[attributedString length])];
         
         //创建文本对齐方式
-        CTTextAlignment alignment = kCTLeftTextAlignment;
+        CTTextAlignment alignment = kCTTextAlignmentLeft;
         if(self.textAlignment == NSTextAlignmentCenter)
         {
-            alignment = kCTCenterTextAlignment;
+            alignment = kCTTextAlignmentCenter;
         }
         if(self.textAlignment == NSTextAlignmentRight)
         {
-            alignment = kCTRightTextAlignment;
+            alignment = kCTTextAlignmentRight;
         }
         
         CTParagraphStyleSetting alignmentStyle;

@@ -63,7 +63,7 @@
 {
     [self.view removeFromSuperview];
     self.view = nil;
-    AppDelegate *app = [UIApplication sharedApplication].delegate;
+    AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
     [app showMainPage];
     [[NSUserDefaults standardUserDefaults] setBool:YES forKey:User_Guided];
     [[NSUserDefaults standardUserDefaults] synchronize];
@@ -88,15 +88,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

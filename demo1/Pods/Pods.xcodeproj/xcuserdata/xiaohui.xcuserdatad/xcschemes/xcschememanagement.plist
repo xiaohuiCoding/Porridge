@@ -6,53 +6,63 @@
 	<dict>
 		<key>AFNetworking.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-demo1.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-demo1Tests.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>SDCycleScrollView.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>SDWebImage.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>UIAlertView-Blocks.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>34D818A9987A93104FD8ADF8302907A9</key>
+		<key>4BEA27FFECCA91DD773AA6A6BC5C29F9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3909EE529688ECE8B911623D3A1E71E5</key>
+		<key>4D2CA8D7995CB861CC18089F4C98C6EE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>50BBF90CE645C895DDDE7E3DF3AD9BEB</key>
+		<key>645B004D9233C06A9C34B88FA129F5C8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>539915239395A40E37340088090230AB</key>
+		<key>7D8C6B664F24783688E25D15846A6922</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>928353533005A4198EBDA5B700D37B64</key>
+		<key>9E033EDB5EC0819481B0546434FA577B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B66B5B8F43A6C052A265D083F99AD3DB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,4 +1,4 @@
-//
+ //
 //  PrefixHeader_demo1.pch
 //  demo1
 //
@@ -15,9 +15,13 @@
 //三方类库
 #import "SDCycleScrollView.h"
 #import "UIImageView+WebCache.h"
+#import "UIAlertView+Blocks.h"
+#import "UIActionSheet+Blocks.h"
 
 //工具类
 #import "XHNetwork.h"
 #import "XHObject.h"
+#import "GlobalObject.h"
+#import "LWPrivacyUtils.h"
 
 #endif /* PrefixHeader_demo1_pch */

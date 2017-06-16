@@ -19,16 +19,19 @@ PODS:
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
+  - UIAlertView-Blocks (1.0)
 
 DEPENDENCIES:
   - AFNetworking
   - SDCycleScrollView
+  - UIAlertView-Blocks
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  UIAlertView-Blocks: 7904744fca618afbd2ec646608924f5e69d5acd1
 
-PODFILE CHECKSUM: d55dba416d823534e99e2064501e3d295e4b1ef5
+PODFILE CHECKSUM: aa9e121396dea3b9cfd7868bc78e6abffa8c52ed
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.2.1

@@ -70,6 +70,9 @@
 		06FB69F81D1A436A0046FB24 /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06FB69F61D1A436A0046FB24 /* LaunchImage@2x.png */; };
 		06FB69F91D1A436A0046FB24 /* LaunchImage@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06FB69F71D1A436A0046FB24 /* LaunchImage@3x.png */; };
 		20BF74A1519C82761E127EDA /* libPods-demo1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 435D2FFCDF0DF932C7B393C1 /* libPods-demo1.a */; };
+		4B2B1FE71EF381B700848C8B /* LWPrivacyUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2B1FE61EF381B700848C8B /* LWPrivacyUtils.m */; };
+		4B2B1FEA1EF3824300848C8B /* GlobalObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2B1FE91EF3824300848C8B /* GlobalObject.m */; };
+		4B2B1FED1EF3AF8100848C8B /* 雪窦寺.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4B2B1FEC1EF3AF8100848C8B /* 雪窦寺.mp4 */; };
 		E03FDA4AB185E82E41BB59C5 /* libPods-demo1Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13338C8816559376FD4F22F8 /* libPods-demo1Tests.a */; };
 /* End PBXBuildFile section */
 
@@ -196,6 +199,11 @@
 		13338C8816559376FD4F22F8 /* libPods-demo1Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-demo1Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		435D2FFCDF0DF932C7B393C1 /* libPods-demo1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-demo1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4662B5B1D7C4136706F8D0A3 /* Pods-demo1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo1.release.xcconfig"; path = "Pods/Target Support Files/Pods-demo1/Pods-demo1.release.xcconfig"; sourceTree = "<group>"; };
+		4B2B1FE51EF381B700848C8B /* LWPrivacyUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPrivacyUtils.h; sourceTree = "<group>"; };
+		4B2B1FE61EF381B700848C8B /* LWPrivacyUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPrivacyUtils.m; sourceTree = "<group>"; };
+		4B2B1FE81EF3824300848C8B /* GlobalObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalObject.h; sourceTree = "<group>"; };
+		4B2B1FE91EF3824300848C8B /* GlobalObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalObject.m; sourceTree = "<group>"; };
+		4B2B1FEC1EF3AF8100848C8B /* 雪窦寺.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "雪窦寺.mp4"; sourceTree = "<group>"; };
 		5ABCB9C06986218F04BEB8FA /* Pods-demo1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo1Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-demo1Tests/Pods-demo1Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D72A2854DF1749D19FDD8A9D /* Pods-demo1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo1Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-demo1Tests/Pods-demo1Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E52913E3CD10C52A488D027D /* Pods-demo1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-demo1/Pods-demo1.debug.xcconfig"; sourceTree = "<group>"; };
@@ -231,6 +239,7 @@
 		0678EFC91D1269CF000A3B7B /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				4B2B1FEB1EF3AF8100848C8B /* video */,
 				0678EFCA1D1269CF000A3B7B /* images */,
 			);
 			path = Resource;
@@ -305,6 +314,7 @@
 				06F54D4E1D13951000119CE8 /* AppDelegate.m */,
 				06F54D6C1D13AC2D00119CE8 /* TabBarController.h */,
 				06F54D6D1D13AC2D00119CE8 /* TabBarController.m */,
+				4B2B1FE31EF381B700848C8B /* Util */,
 				06FB69EF1D1A1EDE0046FB24 /* Header */,
 				06FB69F21D1A1EDE0046FB24 /* Tool */,
 				06F54D451D1394A700119CE8 /* CustomView */,
@@ -484,6 +494,8 @@
 				06811D751D3E453000FD6546 /* Label */,
 				06FB69F31D1A1EDE0046FB24 /* XHNetwork.h */,
 				06FB69F41D1A1EDE0046FB24 /* XHNetwork.m */,
+				4B2B1FE81EF3824300848C8B /* GlobalObject.h */,
+				4B2B1FE91EF3824300848C8B /* GlobalObject.m */,
 				06F13F091D1D02C000E75BEF /* XHObject.h */,
 				06F13F0A1D1D02C000E75BEF /* XHObject.m */,
 				06811D791D3E473500FD6546 /* XHTheme.h */,
@@ -496,6 +508,31 @@
 				06C5E4581D58654500A7D474 /* XHAVVideoManager.m */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		4B2B1FE31EF381B700848C8B /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				4B2B1FE41EF381B700848C8B /* Privacy */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		4B2B1FE41EF381B700848C8B /* Privacy */ = {
+			isa = PBXGroup;
+			children = (
+				4B2B1FE51EF381B700848C8B /* LWPrivacyUtils.h */,
+				4B2B1FE61EF381B700848C8B /* LWPrivacyUtils.m */,
+			);
+			path = Privacy;
+			sourceTree = "<group>";
+		};
+		4B2B1FEB1EF3AF8100848C8B /* video */ = {
+			isa = PBXGroup;
+			children = (
+				4B2B1FEC1EF3AF8100848C8B /* 雪窦寺.mp4 */,
+			);
+			path = video;
 			sourceTree = "<group>";
 		};
 		8A79C104F881DEB831B337DD /* Frameworks */ = {
@@ -586,12 +623,13 @@
 		06D359C21C9FDC1D003359B8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = xinguang;
 				TargetAttributes = {
 					06D359C91C9FDC1D003359B8 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = RHYXLE7GFE;
+						DevelopmentTeam = HR82A7Q6AP;
+						ProvisioningStyle = Automatic;
 					};
 					06D359E21C9FDC1E003359B8 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -651,6 +689,7 @@
 				0678EFDE1D1269CF000A3B7B /* LaunchImage.png in Resources */,
 				0678EFDB1D1269CF000A3B7B /* h2.jpg in Resources */,
 				0678EFDA1D1269CF000A3B7B /* h1.jpg in Resources */,
+				4B2B1FED1EF3AF8100848C8B /* 雪窦寺.mp4 in Resources */,
 				06D359D81C9FDC1D003359B8 /* Main.storyboard in Resources */,
 				06F54D7D1D13F15700119CE8 /* message_highlight@2x.png in Resources */,
 				06F54D7E1D13F15700119CE8 /* message_normal@2x.png in Resources */,
@@ -718,7 +757,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		E8457586A584A722E9B08DFE /* [CP] Embed Pods Frameworks */ = {
@@ -748,7 +787,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		FB08CE99A3E2CA751DE93600 /* [CP] Copy Pods Resources */ = {
@@ -778,12 +817,14 @@
 				06F54D6E1D13AC2D00119CE8 /* TabBarController.m in Sources */,
 				0627F3C01D2B930900A5CBCA /* MyCell.m in Sources */,
 				061B36CC1D50705700F917D2 /* MyMusicViewController.m in Sources */,
+				4B2B1FEA1EF3824300848C8B /* GlobalObject.m in Sources */,
 				06F54D5C1D139DAF00119CE8 /* ThirdViewController.m in Sources */,
 				06C5E4561D585A1900A7D474 /* XHAVAudioManager.m in Sources */,
 				06F54D6B1D13A01E00119CE8 /* TabBarItem.m in Sources */,
 				0641CFA21D22592B006CA897 /* AdvertiseDetailViewController.m in Sources */,
 				06811D7B1D3E473500FD6546 /* XHTheme.m in Sources */,
 				06F54D8F1D13F1A800119CE8 /* ViewControllerDetailNext.m in Sources */,
+				4B2B1FE71EF381B700848C8B /* LWPrivacyUtils.m in Sources */,
 				06C5E4591D58654500A7D474 /* XHAVVideoManager.m in Sources */,
 				06F54D561D139D9700119CE8 /* HomeViewController.m in Sources */,
 				06F54D591D139DA600119CE8 /* SecondViewController.m in Sources */,
@@ -872,8 +913,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -896,7 +939,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -916,8 +959,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -934,7 +979,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -948,16 +993,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = RHYXLE7GFE;
+				DEVELOPMENT_TEAM = HR82A7Q6AP;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/demo1/Header/PrefixHeader_demo1.pch";
 				INFOPLIST_FILE = demo1/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaohui.demo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -968,12 +1014,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = RHYXLE7GFE;
+				DEVELOPMENT_TEAM = HR82A7Q6AP;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/demo1/Header/PrefixHeader_demo1.pch";
 				INFOPLIST_FILE = demo1/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaohui.demo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -1,11 +1,13 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-platform :ios, "7.0"
+platform :ios, '8.0'
 
 target 'demo1' do
 
 pod 'AFNetworking'
 pod 'SDCycleScrollView'
+pod 'UIAlertView-Blocks'
+
 end
 
 target 'demo1Tests' do

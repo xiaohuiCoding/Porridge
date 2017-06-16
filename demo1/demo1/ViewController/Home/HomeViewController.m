@@ -14,7 +14,7 @@
 #import "XHObserver.h"
 #import "MyLabel.h"
 
-@interface HomeViewController ()<SDCycleScrollViewDelegate>
+@interface HomeViewController ()<SDCycleScrollViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 {
     XHObserver *observer;
     UILabel *lb;
@@ -163,15 +163,67 @@
 //扫描
 - (void)scan
 {
-    ScanViewController *scanVC = [[ScanViewController alloc] init];
-    scanVC.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:scanVC animated:YES];
+//    @weakify(self)
+    [LWPrivacyUtils requestCameraPermission:^(BOOL granted) {
+//        @strongify(self)
+        if (granted) {
+            ScanViewController *scanVC = [[ScanViewController alloc] init];
+            scanVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:scanVC animated:YES];
+        }
+        
+    } isShowAlertView:YES];
 }
 
 //搜索
 - (void)search
 {
-    
+    [self setAvatar];
+}
+
+- (void)setAvatar
+{
+//    @weakify(self)
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil cancelButtonItem:[RIButtonItem itemWithLabel:NSLocalizedString(@"取消", @"取消")] destructiveButtonItem:nil otherButtonItems:[RIButtonItem itemWithLabel:NSLocalizedString(@"拍照", @"拍照") action:^{
+//        @strongify(self)
+        [self takePhotoWithSourceType:UIImagePickerControllerSourceTypeCamera];
+        
+    }], [RIButtonItem itemWithLabel:NSLocalizedString(@"从相册中选取", @"从相册中选取") action:^{
+//        @strongify(self)
+        [self takePhotoWithSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+        
+    }], nil];
+    [actionSheet showInView:[UIApplication sharedApplication].keyWindow];
+}
+
+- (void)takePhotoWithSourceType:(UIImagePickerControllerSourceType)sourceType
+{
+//    @weakify(self)
+    if (sourceType == UIImagePickerControllerSourceTypeCamera) {
+        [LWPrivacyUtils requestCameraPermission:^(BOOL granted) {
+//            @strongify(self)
+            if (granted) {
+                [self showImagePickerControllerWithSourceType:sourceType];
+            }
+            
+        } isShowAlertView:YES];
+    } else if (sourceType == UIImagePickerControllerSourceTypePhotoLibrary) {
+        [LWPrivacyUtils requestPhotoPermission:^(BOOL isDetermined) {
+            if (isDetermined) {
+                [self showImagePickerControllerWithSourceType:sourceType];
+            }
+        } isShowAlertView:YES];
+    }
+}
+
+- (void)showImagePickerControllerWithSourceType:(UIImagePickerControllerSourceType)sourceType
+{
+    UIImagePickerController *controller = [[UIImagePickerController alloc] init];
+    controller.sourceType = sourceType;
+    controller.mediaTypes = @[(__bridge NSString *)kUTTypeImage];
+    controller.allowsEditing = YES;
+    controller.delegate = self;
+    [self presentViewController:controller animated:YES completion:nil];
 }
 
 //点击图片回调代理方法
