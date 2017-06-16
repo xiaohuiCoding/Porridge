@@ -11,7 +11,9 @@
 
 @implementation XHObject
 
-#pragma 获取系统对象
+// MARK: - 获取系统对象
+
+#pragma mark - 获取系统对象
 
 + (AppDelegate *)getApp
 {
@@ -166,7 +168,7 @@
     return NO;
 }
 
-//验证字符串
+//验证字符串（两种情况）
 + (BOOL)verifyString:(NSString *)string
 {
     NSString *str = [string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
@@ -176,7 +178,7 @@
     return NO;
 }
 
-//验证字符串
+//验证字符串（四种情况）
 + (BOOL)verifyStringOfReturn:(NSString *)string
 {
     NSString *str = [string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
