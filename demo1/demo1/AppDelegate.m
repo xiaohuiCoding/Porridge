@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
+
 #import "UserGuideViewController.h"
 #import "AdvertiseView.h"
 #import "TabBarController.h"
@@ -17,7 +20,23 @@
 
 @implementation AppDelegate
 
+- (void) logUser {
+    // TODO: Use the current user's information
+    // You can call any combination of these three methods
+    [CrashlyticsKit setUserIdentifier:@"12345"];
+    [CrashlyticsKit setUserEmail:@"user@fabric.io"];
+    [CrashlyticsKit setUserName:@"Test User"];
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    // 崩溃分析
+    [Fabric with:@[[Crashlytics class]]];
+    // TODO: Move this to where you establish a user session
+    [self logUser];
+
+    
+    
     
     NSLog(@"沙盒路径：%@",NSHomeDirectory());
     

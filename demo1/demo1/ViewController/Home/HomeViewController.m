@@ -13,6 +13,7 @@
 #import "Weather.h"
 #import "XHObserver.h"
 #import "MyLabel.h"
+#import <Crashlytics/Crashlytics.h>
 
 @interface HomeViewController ()<SDCycleScrollViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 {
@@ -37,8 +38,21 @@
     [self.view endEditing:YES];
 }
 
+- (void)crashButtonTapped:(id)sender {
+    [[Crashlytics sharedInstance] crash];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UIButton* button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    button.backgroundColor = [UIColor redColor];
+    button.frame = CGRectMake(120, 200, 100, 30);
+    [button setTitle:@"Crash" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(crashButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+
+    
     
     //监听广告图被点击了
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pushToAdvertiseDetailPage) name:@"pushToAdvertiseDetail" object:nil];

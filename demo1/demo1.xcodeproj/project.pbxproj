@@ -558,6 +558,7 @@
 				06D359C81C9FDC1D003359B8 /* Resources */,
 				B2EE6899B2A3744E9BB61438 /* [CP] Embed Pods Frameworks */,
 				5E09E96D85B11D88EF49F921 /* [CP] Copy Pods Resources */,
+				4B9030BA1EFCE5B700135994 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -618,7 +619,7 @@
 				TargetAttributes = {
 					06D359C91C9FDC1D003359B8 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = HR82A7Q6AP;
+						DevelopmentTeam = RHYXLE7GFE;
 						ProvisioningStyle = Automatic;
 					};
 					06D359E21C9FDC1E003359B8 = {
@@ -705,6 +706,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4B9030BA1EFCE5B700135994 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 595ade7b989654e2d7c26a4191b68e92bc26095f f66146255a0651ab9d5f39d862e0737d20476d8ff6c94995e070937429fbb568";
+		};
 		5E09E96D85B11D88EF49F921 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -981,7 +995,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = HR82A7Q6AP;
+				DEVELOPMENT_TEAM = RHYXLE7GFE;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/demo1/Header/PrefixHeader_demo1.pch";
@@ -1002,7 +1016,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = HR82A7Q6AP;
+				DEVELOPMENT_TEAM = RHYXLE7GFE;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/demo1/Header/PrefixHeader_demo1.pch";
