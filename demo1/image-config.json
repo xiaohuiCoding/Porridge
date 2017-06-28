@@ -1,0 +1,16 @@
+{
+	"items": [
+
+		{
+			"type" : "assets",
+			"sourcePath": "./sourceImages/assets" ,
+			"destPath" : "./demo1/Assets.xcassets"
+		},
+		{
+			"type" : "icon",
+			"sourcePath": "./sourceImages/icon" ,
+			"destPath" : "./demo1/Assets.xcassets",
+			"name" : "AppIcon"
+		}
+	]
+}
