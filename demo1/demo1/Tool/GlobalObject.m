@@ -17,7 +17,7 @@
         NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"Info" ofType:@"plist"];
         NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:bundlePath];
         NSString *appName = [dict objectForKey:@"CFBundleName"];
-        //        NSString *appName = [dict objectForKey:@"CFBundleDisplayName"];
+        //NSString *appName = [dict objectForKey:@"CFBundleDisplayName"];
         _appName = [NSString stringWithString:appName];
     }
     return _appName;

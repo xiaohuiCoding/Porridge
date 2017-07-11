@@ -11,11 +11,7 @@
 
 @interface GlobalObject : NSObject
 
-/************** 属性 **************/
-
 @property (nonatomic, copy) NSString *appName;
-
-/************** 方法 **************/
 
 + (GlobalObject *)sharedInstance;
 
