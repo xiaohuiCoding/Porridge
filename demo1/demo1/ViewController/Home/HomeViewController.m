@@ -240,7 +240,7 @@
     [self presentViewController:controller animated:YES completion:nil];
 }
 
-//点击图片回调代理方法
+/** 点击图片回调 */
 - (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index
 {
     NSArray *arr = @[@"http://www.iqiyi.com/",@"http://www.taobao.com/",@"http://www.jd.com/",@"http://www.sina.com/"];
@@ -248,6 +248,12 @@
     vcDetail.urlString = arr[index];
     vcDetail.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vcDetail animated:YES];
+}
+
+/** 图片滚动回调 */
+- (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didScrollToIndex:(NSInteger)index
+{
+    NSLog(@"%@",[NSString stringWithFormat:@"%ld/3",(long)index]);
 }
 
 //更改属性值

@@ -71,6 +71,7 @@
 		4B2B1FE71EF381B700848C8B /* LWPrivacyUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2B1FE61EF381B700848C8B /* LWPrivacyUtils.m */; };
 		4B2B1FEA1EF3824300848C8B /* GlobalObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2B1FE91EF3824300848C8B /* GlobalObject.m */; };
 		4B2B1FED1EF3AF8100848C8B /* 雪窦寺.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4B2B1FEC1EF3AF8100848C8B /* 雪窦寺.mp4 */; };
+		4BCC4C101FBC3AAC0092591D /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4BCC4C0F1FBC3AAC0092591D /* test.gif */; };
 		E03FDA4AB185E82E41BB59C5 /* libPods-demo1Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13338C8816559376FD4F22F8 /* libPods-demo1Tests.a */; };
 /* End PBXBuildFile section */
 
@@ -198,6 +199,7 @@
 		4B2B1FE81EF3824300848C8B /* GlobalObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalObject.h; sourceTree = "<group>"; };
 		4B2B1FE91EF3824300848C8B /* GlobalObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalObject.m; sourceTree = "<group>"; };
 		4B2B1FEC1EF3AF8100848C8B /* 雪窦寺.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "雪窦寺.mp4"; sourceTree = "<group>"; };
+		4BCC4C0F1FBC3AAC0092591D /* test.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test.gif; sourceTree = "<group>"; };
 		5ABCB9C06986218F04BEB8FA /* Pods-demo1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo1Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-demo1Tests/Pods-demo1Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D72A2854DF1749D19FDD8A9D /* Pods-demo1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo1Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-demo1Tests/Pods-demo1Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E52913E3CD10C52A488D027D /* Pods-demo1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-demo1/Pods-demo1.debug.xcconfig"; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 		0678EFCA1D1269CF000A3B7B /* images */ = {
 			isa = PBXGroup;
 			children = (
+				4BCC4C0E1FBC3AA30092591D /* gif */,
 				0638BD6C1D17D12A00AB259E /* 立即体验@2x.png */,
 				0638BD6D1D17D12A00AB259E /* 立即体验@3x.png */,
 				06C50AA11D239DBE000BCFA3 /* header-arrow@2x.png */,
@@ -525,6 +528,14 @@
 			path = video;
 			sourceTree = "<group>";
 		};
+		4BCC4C0E1FBC3AA30092591D /* gif */ = {
+			isa = PBXGroup;
+			children = (
+				4BCC4C0F1FBC3AAC0092591D /* test.gif */,
+			);
+			path = gif;
+			sourceTree = "<group>";
+		};
 		8A79C104F881DEB831B337DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -679,6 +690,7 @@
 				06F54D801D13F15700119CE8 /* mycity_normal@2x.png in Resources */,
 				0678EFDE1D1269CF000A3B7B /* LaunchImage.png in Resources */,
 				0678EFDB1D1269CF000A3B7B /* h2.jpg in Resources */,
+				4BCC4C101FBC3AAC0092591D /* test.gif in Resources */,
 				0678EFDA1D1269CF000A3B7B /* h1.jpg in Resources */,
 				4B2B1FED1EF3AF8100848C8B /* 雪窦寺.mp4 in Resources */,
 				06D359D81C9FDC1D003359B8 /* Main.storyboard in Resources */,

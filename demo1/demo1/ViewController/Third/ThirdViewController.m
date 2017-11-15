@@ -8,6 +8,7 @@
 
 #import "ThirdViewController.h"
 #import "XHNetwork.h"
+#import "UIImage+GIF.h"
 
 @interface ThirdViewController ()
 {
@@ -61,6 +62,19 @@
     progressLabel.backgroundColor = [UIColor greenColor];
     progressLabel.textAlignment = NSTextAlignmentCenter;
     [downloadLabel addSubview:progressLabel];
+    
+    //加载gif
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 300, self.view.bounds.size.width, 100)];
+    [self.view addSubview:imgView];
+    
+    //用这种加载后图不会动，只显示第一张子图
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"gif"];
+//    NSData *data = [NSData dataWithContentsOfFile:path];
+//    UIImage *image = [UIImage imageWithData:data];
+//    imgView.image = image;
+    
+    //用SDWebImage中提供的分类方法加载即可
+    imgView.image = [UIImage sd_animatedGIFNamed:@"test"];
 }
 
 - (void)downloadPic
