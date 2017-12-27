@@ -29,6 +29,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>TXScrollLabelView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>UIAlertView-Blocks.xcscheme</key>
 		<dict>
 			<key>isShown</key>

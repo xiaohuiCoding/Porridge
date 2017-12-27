@@ -71,6 +71,7 @@
 		4B2B1FE71EF381B700848C8B /* LWPrivacyUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2B1FE61EF381B700848C8B /* LWPrivacyUtils.m */; };
 		4B2B1FEA1EF3824300848C8B /* GlobalObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2B1FE91EF3824300848C8B /* GlobalObject.m */; };
 		4B2B1FED1EF3AF8100848C8B /* 雪窦寺.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4B2B1FEC1EF3AF8100848C8B /* 雪窦寺.mp4 */; };
+		4B61ED401FD793D1008E6BE0 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B61ED3F1FD793D1008E6BE0 /* DetailViewController.m */; };
 		4BCC4C101FBC3AAC0092591D /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4BCC4C0F1FBC3AAC0092591D /* test.gif */; };
 		E03FDA4AB185E82E41BB59C5 /* libPods-demo1Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13338C8816559376FD4F22F8 /* libPods-demo1Tests.a */; };
 /* End PBXBuildFile section */
@@ -199,6 +200,8 @@
 		4B2B1FE81EF3824300848C8B /* GlobalObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalObject.h; sourceTree = "<group>"; };
 		4B2B1FE91EF3824300848C8B /* GlobalObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalObject.m; sourceTree = "<group>"; };
 		4B2B1FEC1EF3AF8100848C8B /* 雪窦寺.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "雪窦寺.mp4"; sourceTree = "<group>"; };
+		4B61ED3E1FD793D1008E6BE0 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		4B61ED3F1FD793D1008E6BE0 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		4BCC4C0F1FBC3AAC0092591D /* test.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test.gif; sourceTree = "<group>"; };
 		5ABCB9C06986218F04BEB8FA /* Pods-demo1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo1Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-demo1Tests/Pods-demo1Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D72A2854DF1749D19FDD8A9D /* Pods-demo1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo1Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-demo1Tests/Pods-demo1Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -419,6 +422,8 @@
 				061B36CB1D50705700F917D2 /* MyMusicViewController.m */,
 				06B533A11D535D6C00855EE6 /* MyMovieViewController.h */,
 				06B533A21D535D6C00855EE6 /* MyMovieViewController.m */,
+				4B61ED3E1FD793D1008E6BE0 /* DetailViewController.h */,
+				4B61ED3F1FD793D1008E6BE0 /* DetailViewController.m */,
 				0627F3BE1D2B930900A5CBCA /* MyCell.h */,
 				0627F3BF1D2B930900A5CBCA /* MyCell.m */,
 				06C9D2171D260D41001251AD /* MyViewController.h */,
@@ -767,13 +772,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-demo1Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E8457586A584A722E9B08DFE /* [CP] Embed Pods Frameworks */ = {
@@ -797,13 +805,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-demo1-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FB08CE99A3E2CA751DE93600 /* [CP] Copy Pods Resources */ = {
@@ -857,6 +868,7 @@
 				06F54DA51D13F47800119CE8 /* IdentifyViewController.m in Sources */,
 				06C9D2191D260D41001251AD /* MyViewController.m in Sources */,
 				06F54D901D13F1A800119CE8 /* Weather.m in Sources */,
+				4B61ED401FD793D1008E6BE0 /* DetailViewController.m in Sources */,
 				06F54D681D139FEC00119CE8 /* TabBar.m in Sources */,
 				06F54DA41D13F47800119CE8 /* GenerateViewController.m in Sources */,
 				06F54D8E1D13F1A800119CE8 /* ViewControllerDetail.m in Sources */,

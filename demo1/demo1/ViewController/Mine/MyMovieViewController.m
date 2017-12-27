@@ -7,8 +7,9 @@
 //
 
 #import "MyMovieViewController.h"
-
 #import "XHAVVideoManager.h"
+#import "DetailViewController.h"
+#import "TXScrollLabelView.h"
 
 @interface MyMovieViewController ()
 {
@@ -46,6 +47,24 @@
     [self.view addSubview:btn4];
     
     currentIndex = 0;
+    
+    //2.创建TXScrollLabelView
+    TXScrollLabelView *scrollLabelView = [TXScrollLabelView scrollWithTitle:@"哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈" type:0 velocity:0.5 options:UIViewAnimationOptionTransitionFlipFromTop];
+    scrollLabelView.frame = CGRectMake(10, 300, 200, 30);
+    //3.开始滚动
+    [scrollLabelView beginScrolling];
+    [self.view addSubview:scrollLabelView];
+    
+    UIButton *pushButton = [GlobalObject newButton:CGRectMake(200, 350, 60, 40) title:@"push" titleColor:nil normalBkg:nil highlightedBkg:nil];
+    pushButton.backgroundColor = [UIColor redColor];
+    [pushButton addTarget:self action:@selector(pushToDetail) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:pushButton];
+}
+
+- (void)pushToDetail
+{
+    DetailViewController *vc = [[DetailViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)playTheFirst:(NSString *)url
