@@ -71,6 +71,7 @@
 //    NSString *path = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"gif"];
 //    NSData *data = [NSData dataWithContentsOfFile:path];
 //    UIImage *image = [UIImage imageWithData:data];
+////    UIImage *image = [UIImage imageWithContentsOfFile:path];
 //    imgView.image = image;
     
     //用SDWebImage中提供的分类方法加载即可
