@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'DD742334343B757D9CFAC9A17799C23D'
-               BlueprintName = 'UIAlertView-Blocks'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libUIAlertView-Blocks.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AF0473900C9A750D767F001CB7C8EC88"
+               BlueprintName = "UIAlertView-Blocks"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "libUIAlertView-Blocks.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
