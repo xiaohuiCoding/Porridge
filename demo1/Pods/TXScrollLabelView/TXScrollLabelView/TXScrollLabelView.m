@@ -90,7 +90,7 @@ typedef NS_ENUM(NSInteger, TXScrollLabelType) {
     TXScrollLabel *label = [[TXScrollLabel alloc]init];
     label.numberOfLines = 0;
     label.font = TXScrollLabelFont;
-    label.textColor = [UIColor blackColor];
+    label.textColor = [UIColor whiteColor];
     label.lineBreakMode = NSLineBreakByWordWrapping;
     label.textAlignment = NSTextAlignmentCenter;
     return label;
@@ -132,7 +132,7 @@ typedef NS_ENUM(NSInteger, TXScrollLabelType) {
 
 - (void)setSomePreference {
     /** Default preference. */
-//    self.backgroundColor = [UIColor blackColor];
+    self.backgroundColor = [UIColor blackColor];
     self.scrollEnabled = NO;
 }
 

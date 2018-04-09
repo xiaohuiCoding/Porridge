@@ -1,50 +1,62 @@
 PODS:
-  - AFNetworking (3.1.0):
-    - AFNetworking/NSURLSession (= 3.1.0)
-    - AFNetworking/Reachability (= 3.1.0)
-    - AFNetworking/Security (= 3.1.0)
-    - AFNetworking/Serialization (= 3.1.0)
-    - AFNetworking/UIKit (= 3.1.0)
-  - AFNetworking/NSURLSession (3.1.0):
+  - AFNetworking (3.2.0):
+    - AFNetworking/NSURLSession (= 3.2.0)
+    - AFNetworking/Reachability (= 3.2.0)
+    - AFNetworking/Security (= 3.2.0)
+    - AFNetworking/Serialization (= 3.2.0)
+    - AFNetworking/UIKit (= 3.2.0)
+  - AFNetworking/NSURLSession (3.2.0):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.1.0)
-  - AFNetworking/Security (3.1.0)
-  - AFNetworking/Serialization (3.1.0)
-  - AFNetworking/UIKit (3.1.0):
+  - AFNetworking/Reachability (3.2.0)
+  - AFNetworking/Security (3.2.0)
+  - AFNetworking/Serialization (3.2.0)
+  - AFNetworking/UIKit (3.2.0):
     - AFNetworking/NSURLSession
-  - Crashlytics (3.8.4):
-    - Fabric (~> 1.6.3)
-  - Fabric (1.6.11)
-  - SDCycleScrollView (1.65):
-    - SDWebImage (~> 3.7)
-  - SDWebImage (3.8.2):
-    - SDWebImage/Core (= 3.8.2)
-  - SDWebImage/Core (3.8.2)
+  - Crashlytics (3.10.1):
+    - Fabric (~> 1.7.5)
+  - Fabric (1.7.6)
+  - SDCycleScrollView (1.75):
+    - SDWebImage (>= 4.0.0)
+  - SDWebImage (4.3.3):
+    - SDWebImage/Core (= 4.3.3)
+  - SDWebImage/Core (4.3.3)
+  - TTTLibrary (0.1.0)
   - TXScrollLabelView (1.3.2)
   - UIAlertView-Blocks (1.0)
-  - XHTestLibrary (0.1.0)
 
 DEPENDENCIES:
   - AFNetworking
   - Crashlytics
   - Fabric
   - SDCycleScrollView
+  - TTTLibrary
   - TXScrollLabelView
   - UIAlertView-Blocks
-  - XHTestLibrary
+
+SPEC REPOS:
+  "http://fengxiaohui@git.ops.com/fengxiaohui/TTTRepo.git":
+    - TTTLibrary
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - Crashlytics
+    - Fabric
+    - SDCycleScrollView
+    - SDWebImage
+    - TXScrollLabelView
+    - UIAlertView-Blocks
 
 SPEC CHECKSUMS:
-  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
-  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
-  SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
-  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  Crashlytics: aee1a064cbbf99b32efa3f056a5f458d846bc8ff
+  Fabric: f8d42c893bb187326a7968b62abe55c36a987a46
+  SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
+  SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
+  TTTLibrary: 09adb960ddf66c36970fd8efd2059a1979bb1999
   TXScrollLabelView: 0e1650caf61198bf5dc0938ea6493254aeb80f90
   UIAlertView-Blocks: 7904744fca618afbd2ec646608924f5e69d5acd1
-  XHTestLibrary: 38f0922da3f9a890ffa7f97e84583a9318714afc
 
-PODFILE CHECKSUM: 6d6e457a5bfc3b29fd2f18da0f0b9472496b11ff
+PODFILE CHECKSUM: a392b77f93c8cb0542863bf5d231cab03f2ff7e6
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.0

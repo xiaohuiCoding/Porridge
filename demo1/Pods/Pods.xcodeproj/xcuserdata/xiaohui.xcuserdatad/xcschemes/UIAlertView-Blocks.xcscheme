@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AF0473900C9A750D767F001CB7C8EC88"
+               BlueprintIdentifier = "3B41D0C64F16A1E52A2E3D475923F678"
                BlueprintName = "UIAlertView-Blocks"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libUIAlertView-Blocks.a">

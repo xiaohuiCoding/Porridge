@@ -74,8 +74,8 @@
 ////    UIImage *image = [UIImage imageWithContentsOfFile:path];
 //    imgView.image = image;
     
-    //用SDWebImage中提供的分类方法加载即可
-    imgView.image = [UIImage sd_animatedGIFNamed:@"test"];
+    //用SDWebImage中提供的分类方法加载即可（貌似某个旧版本才支持，最新的版本不支持了）
+//    imgView.image = [UIImage sd_animatedGIFNamed:@"test"];
 }
 
 - (void)downloadPic
