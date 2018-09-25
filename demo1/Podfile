@@ -6,7 +6,7 @@ inhibit_all_warnings!
 # 引入cocoapods公有仓库
 source 'https://github.com/CocoaPods/Specs.git'
 # 引入私有仓库
-source 'http://fengxiaohui@git.ops.com/fengxiaohui/TTTRepo.git'
+#source 'http://fengxiaohui@git.ops.com/fengxiaohui/TTTRepo.git'
 
 target 'demo1' do
 
@@ -20,7 +20,7 @@ pod 'Crashlytics'
 
 
 #私有组件
-pod 'TTTLibrary'
+#pod 'TTTLibrary'
 #pod 'TTTLibrary', '~> 0.1.0'
 #pod 'TTTLibrary', :path => '~/.cocoapods/repos/TTTRepo/TTTLibrary'
 #pod 'TTTLibrary', :git => 'http://fengxiaohui@git.ops.com/fengxiaohui/TTTLibrary.git'
