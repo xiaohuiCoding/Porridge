@@ -86,7 +86,7 @@
     timer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(passValue) userInfo:nil repeats:YES];
     
     XHNetwork *network = [XHNetwork sharedInstance];
-    [network downloadFileWithURLString:@"https://d13yacurqjgara.cloudfront.net/users/26059/screenshots/1399501/imperial_beer.jpg" result:^(NSString *filePath, float progressNumber, NSString *progressString, NSError *error) {
+    [network downloadFileWithURLString:@"https://raw.githubusercontent.com/wiki/xiaohuiCoding/blogImages/Demo/resource_20180611_6.png" result:^(NSString *filePath, float progressNumber, NSString *progressString, NSError *error) {
         progressNum = progressNumber;
         progressStr = progressString;
     }];
