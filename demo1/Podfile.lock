@@ -22,7 +22,6 @@ PODS:
   - SDWebImage (4.3.3):
     - SDWebImage/Core (= 4.3.3)
   - SDWebImage/Core (4.3.3)
-  - TTTLibrary (0.1.0)
   - TXScrollLabelView (1.3.2)
   - UIAlertView-Blocks (1.0)
 
@@ -31,21 +30,8 @@ DEPENDENCIES:
   - Crashlytics
   - Fabric
   - SDCycleScrollView
-  - TTTLibrary
   - TXScrollLabelView
   - UIAlertView-Blocks
-
-SPEC REPOS:
-  "http://fengxiaohui@git.ops.com/fengxiaohui/TTTRepo.git":
-    - TTTLibrary
-  https://github.com/CocoaPods/Specs.git:
-    - AFNetworking
-    - Crashlytics
-    - Fabric
-    - SDCycleScrollView
-    - SDWebImage
-    - TXScrollLabelView
-    - UIAlertView-Blocks
 
 SPEC CHECKSUMS:
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
@@ -53,10 +39,9 @@ SPEC CHECKSUMS:
   Fabric: f8d42c893bb187326a7968b62abe55c36a987a46
   SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
-  TTTLibrary: 09adb960ddf66c36970fd8efd2059a1979bb1999
   TXScrollLabelView: 0e1650caf61198bf5dc0938ea6493254aeb80f90
   UIAlertView-Blocks: 7904744fca618afbd2ec646608924f5e69d5acd1
 
-PODFILE CHECKSUM: 8a0266655eb6b52c8f7e50a8403855408b70b374
+PODFILE CHECKSUM: 3fe9d6c3eaa1aea02e92326666f66e6ecf7f276f
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.3.1
