@@ -11,7 +11,7 @@
 #import "SecondViewController.h"
 #import "ThirdViewController.h"
 #import "FourthViewController.h"
-//#import "MineViewController.h"
+#import "MineViewController.h"
 //#import "MyViewController.h"
 #import "MyMusicViewController.h"
 #import "MyMovieViewController.h"
@@ -48,10 +48,10 @@
     nav4.navigationBar.barTintColor = [UIColor purpleColor];
     [nav4.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor], NSFontAttributeName:[UIFont systemFontOfSize:20.0]}];
     
-//    MineViewController *mineVC = [[MineViewController alloc] init];
-//    UINavigationController *nav5 = [[UINavigationController alloc] initWithRootViewController:mineVC];
-//    nav5.navigationBar.barTintColor = [UIColor purpleColor];
-//    [nav5.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor], NSFontAttributeName:[UIFont systemFontOfSize:20.0]}];
+    MineViewController *mineVC = [[MineViewController alloc] init];
+    UINavigationController *nav5 = [[UINavigationController alloc] initWithRootViewController:mineVC];
+    nav5.navigationBar.barTintColor = [UIColor purpleColor];
+    [nav5.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor], NSFontAttributeName:[UIFont systemFontOfSize:20.0]}];
 
     
 //    MyViewController *myVC = [[MyViewController alloc] init];
@@ -65,10 +65,10 @@
 //    nav5.navigationBar.barTintColor = [UIColor purpleColor];
 //    [nav5.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor], NSFontAttributeName:[UIFont systemFontOfSize:20.0]}];
     
-    MyMovieViewController *myMovieVC = [[MyMovieViewController alloc] init];
-    UINavigationController *nav5 = [[UINavigationController alloc] initWithRootViewController:myMovieVC];
-    nav5.navigationBar.barTintColor = [UIColor purpleColor];
-    [nav5.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor], NSFontAttributeName:[UIFont systemFontOfSize:20.0]}];
+//    MyMovieViewController *myMovieVC = [[MyMovieViewController alloc] init];
+//    UINavigationController *nav5 = [[UINavigationController alloc] initWithRootViewController:myMovieVC];
+//    nav5.navigationBar.barTintColor = [UIColor purpleColor];
+//    [nav5.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor], NSFontAttributeName:[UIFont systemFontOfSize:20.0]}];
     
     
     self.viewControllers = @[nav1, nav2, nav3, nav4, nav5];

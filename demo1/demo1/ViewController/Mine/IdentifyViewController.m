@@ -51,8 +51,8 @@
     
     NSString *result = feature.messageString;
     if (result) {
+        NSLog(@"识别结果：%@",result);
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"扫描结果" message:result delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
-        
         [alert show];
     }
 }

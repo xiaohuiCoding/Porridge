@@ -27,7 +27,14 @@
     
     self.tfCodeTextField = [[UITextField alloc] initWithFrame:CGRectMake(10, 94, DSWidth-80, 40)];
     self.tfCodeTextField.borderStyle = UITextBorderStyleLine;
-    self.tfCodeTextField.text = @"http://weixin.qq.com/r/bvjl0ADEL11QrUSz9618";
+    
+//    self.tfCodeTextField.text = @"http://weixin.qq.com/r/bvjl0ADEL11QrUSz9618";
+    
+//    self.tfCodeTextField.text = @"https://u.wechat.com/EKdiIivxrJ5yTQQXbOgUv_A";
+//    self.tfCodeTextField.text = @"https://u.wechat.com/EDzHdvFfnITqhooXAGWLt_k";
+    
+    self.tfCodeTextField.text = @"https://qr.alipay.com/12012264ffzak1rmj9f4wa5";
+
     self.tfCodeTextField.font = [UIFont systemFontOfSize:12.0];
     [self.view addSubview:self.tfCodeTextField];
     
